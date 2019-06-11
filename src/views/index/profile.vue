@@ -11,9 +11,11 @@
         </div>
         <dir class="login-conten">
           <p class="login-link">登陆/注册</p>
-          <p class="login-msg"><i></i><span>登陆后享受更多特权</span></p>
+          <p class="login-msg"><i class="el-icon-mobile-phone"></i><span class="login-tequan">登陆后享受更多特权</span></p>
         </dir>
-        <span class="logon-guide"><i class="icon-faxian iconfont"></i></span>
+        <span class="logon-guide">
+          <i class="el-icon-arrow-right"></i>
+        </span>
       </router-link>
     </section>
 
@@ -34,32 +36,69 @@ export default {
   data () {
     return {
       infoItem:[
-        { id: 1, name: '红包', classIcon: 'icon-faxian', classParent: 'index-info',classFont: 'index-font',
+        { id: 1, name: '红包',Iconfj: 'itemIcon-fjhb', classIcon: 'el-icon-mobile', classParent: 'index-info',classFont: 'index-font',
         href: '/profile/benefit' },
-        { id: 2, name: '金币', classIcon: 'icon-faxian',classParent: 'index-info',classFont: 'index-font',
+        { id: 2, name: '金币',Iconfj: 'itemIcon-fjjb', classIcon: 'el-icon-coin',classParent: 'index-info',classFont: 'index-font',
         href: '/profile/benefit' }
       ],
       panelMySite:[
-        { id: 1, name: '我的地址', linkC: ['panel-my-link','panel-my-margin','border-tops','border-bottoms'], asideC: ['icon-faxian', 'panel-my-site'],articleC: 'panel-my-art',iconC: 'icon-faxian',
-        href: '/profile/site' }
+        {
+          id: 1,
+          name: '我的地址',
+          linkC: ['panel-my-link','panel-my-margin','border-tops','border-bottoms'],
+          asideC: ['el-icon-location', 'panel-my-site'],
+          articleC: 'panel-my-art',
+          iconC: 'el-icon-arrow-right',
+          href: '/profile/site'
+        }
       ],
       panelMyBoon:[
-        { id: 1, name: '金币商城', linkC: ['panel-my-link','border-tops'], asideC: ['icon-faxian', 'panel-my-site'],articleC: 'panel-my-art',iconC: 'icon-faxian',
-        href: '/profile/site'
+        {
+          id: 1,
+          name: '金币商城',
+          linkC: ['panel-my-link','border-tops'],
+          asideC: ['el-icon-sell', 'panel-my-site'],
+          articleC: 'panel-my-art',
+          iconC: 'el-icon-arrow-right',
+          href: '/profile/site'
         },
-        { id: 2, name: '分享拿20元现金', linkC: ['panel-boon-link','panel-my-link'], asideC: ['icon-faxian', 'panel-my-site'],articleC: ['panel-my-art','border-tops'],iconC: 'icon-faxian',
-        href: '/profile/site'
+        {
+          id: 2,
+          name: '分享拿20元现金',
+          linkC: ['panel-boon-link','panel-my-link'],
+          asideC: ['el-icon-potato-strips', 'panel-my-site'],
+          articleC: ['panel-my-art','border-tops'],
+          iconC: 'el-icon-arrow-right',
+          href: '/profile/site'
         },
       ],
       panelMyServe:[
-        { id: 1, name: '我的客服', linkC: ['panel-my-link','border-tops'], asideC: ['icon-faxian', 'panel-my-site'],articleC: 'panel-my-art',iconC: 'icon-faxian',
-        href: '/profile/site'
+        {
+          id: 1,
+          name: '我的客服',
+          linkC: ['panel-my-link','border-tops'],
+          asideC: ['el-icon-phone', 'panel-my-site'],
+          articleC: 'panel-my-art',
+          iconC: 'el-icon-arrow-right',
+          href: '/profile/site'
         },
-        { id: 2, name: '下载饿了么APP', linkC: ['panel-my-link'], asideC: ['icon-faxian', 'panel-my-site'],articleC: ['panel-my-art','border-tops'],iconC: 'icon-faxian',
-        href: '/profile/site'
+        {
+          id: 2,
+          name: '下载饿了么APP',
+          linkC: ['panel-my-link'],
+          asideC: ['el-icon-platform-eleme', 'panel-my-site'],
+          articleC: ['panel-my-art','border-tops'],
+          iconC: 'el-icon-arrow-right',
+          href: '/profile/site'
         },
-        { id: 3, name: '规则中心', linkC: ['border-bottoms','panel-my-link'], asideC: ['icon-faxian', 'panel-my-site'],articleC: ['panel-my-art','border-tops'],iconC: 'icon-faxian',
-        href: '/profile/site'
+        {
+          id: 3,
+          name: '规则中心',
+          linkC: ['border-bottoms','panel-my-link'],
+          asideC: ['el-icon-s-order', 'panel-my-site'],
+          articleC: ['panel-my-art','border-tops'],
+          iconC: 'el-icon-arrow-right',
+          href: '/profile/site'
         },
       ],
     }
@@ -71,7 +110,7 @@ export default {
 }
 </script>
 
-<style <style lang="less" scoped>
+<style lang="less" scoped>
 @import '~@/styles/common/variable.less';
 @import '~@/styles/common/mixins.less';
 
@@ -85,10 +124,10 @@ export default {
     padding: 25px 15px;
     box-sizing: border-box;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
     background: rgb(3, 139, 250);
-    background: -webkit-linear-gradient(left,rgb(124, 179, 224),rgb(3, 110, 250));
+    background: -webkit-linear-gradient(left,rgb(102, 169, 224),rgb(38, 126, 241));
     .login-buddha{
       border-radius: 50%;
       overflow: hidden;
@@ -96,6 +135,7 @@ export default {
         width: 60px;
         height: 60px;
         border-radius: 50%;
+        margin-right: 2px;
       }
     }
     .login-conten{
@@ -117,12 +157,21 @@ export default {
       .login-msg{
         height: 14px;
         width: 100%;
+        .login-tequan{
+          font-size: 12px;
+        }
+        .el-icon-mobile-phone{
+          font-size: 10px;
+        }
       }
     }
     .logon-guide{
       display: block;
       width: 6px;
       height: 10px;
+      .el-icon-arrow-right{
+        color: #fff;
+      }
     }
     .icon-faxian{
       color: #fff;
