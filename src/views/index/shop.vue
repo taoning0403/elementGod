@@ -1,5 +1,7 @@
 <template>
-  <div>购物首页</div>
+  <div class="page-shop">
+    
+  </div>
 </template>
 
 <script>
