@@ -1,15 +1,15 @@
 <template>
-  <div class="maininfo">
+  <section class="main-info">
     <router-link
       v-for="(item) in infoItem"
       :key="item.id"
       :to="item.href"
       :class="item.classParent"
     >
-      <p><i :class="item.classIcon">tubbiao</i></p>
+      <p><i :class="item.classIcon">tubiao</i></p>
       <p :class="item.classFont">{{ item.name }}</p>
     </router-link>
-  </div>
+  </section>
 </template>
 <script>
 export default {
@@ -24,7 +24,7 @@ export default {
 
 
 <style lang="less" scoped>
-  .maininfo{
+  .main-info{
     width: 375px;
     height: 84px;
     // background: #eee;

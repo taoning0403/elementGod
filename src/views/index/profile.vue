@@ -1,3 +1,4 @@
+// 我的页面
 <template>
   <section class="profile">
     <!-- 顶部登陆组件 -->
@@ -21,7 +22,7 @@
   </section>
 </template>
 <script>
-import ProfileItem from '@/components/publicComponent/ProfileItem.vue';
+import ProfileItem from '@/components/profile/ProfileItem.vue';
 
 export default {
   data () {
@@ -31,7 +32,8 @@ export default {
         href: '/profile/benefit' },
         { id: 2, name: '金币', classIcon: 'icon-films',classParent: 'index-info',classFont: 'index-font',
         href: '/profile/benefit' }
-      ]
+      ],
+
     }
   },
     components: {
@@ -39,6 +41,9 @@ export default {
     }
 }
 </script>
+
+
+
 
 <style <style lang="less" scoped>
 .profile{
@@ -53,7 +58,7 @@ export default {
     justify-content:space-between;
     align-items: center;
     background: rgb(3, 139, 250);
-    background: -webkit-linear-gradient(left,rgb(124, 179, 224),rgb(3, 139, 250));
+    background: -webkit-linear-gradient(left,rgb(124, 179, 224),rgb(3, 110, 250));
     .login-buddha{
       border-radius: 50%;
       overflow: hidden;
