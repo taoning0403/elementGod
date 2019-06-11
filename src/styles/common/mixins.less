@@ -1,0 +1,26 @@
+//公用样式块
+.border-top {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 1px;
+    background: #ededed;
+    transform: scaleY(.5);
+  }
+}
+
+.border-bottom {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background: #ededed;
+    transform: scaleY(.5);
+  }
+}
