@@ -5,6 +5,12 @@ import store from './store'
 
 import './styles/base.less'
 
+import { AddressEdit, Toast } from 'vant'
+
+Vue
+  .use(AddressEdit)
+  .use(Toast)
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -43,8 +43,8 @@ export default new Router({
       ]
     },
     {
-      path:'/goods',
-      name:'goods',
+      path: '/goods',
+      name: 'goods',
       component: () => import('./views/goods/goods.vue')
     },
     {
@@ -56,6 +56,16 @@ export default new Router({
       path: '/profile/benefit',
       name: 'benefits',
       component: () => import('./components/privateComponents/benefit.vue')
+    },
+    {
+      path: '/checkout/checkout',
+      name: 'checkout',
+      component: () => import('./views/checkout/checkout.vue')
+    },
+    {
+      path: '/checkout/address',
+      name: 'address',
+      component: () => import('./views/checkout/address.vue')
     }
   ]
 })
