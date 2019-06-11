@@ -26,6 +26,20 @@
     transform: scaleY(.5);
   }
 }
+// 单右
+.border-right {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #ededed;
+    transform: scaleX(.5);
+  }
+}
 
 // 上下边框
 .border-tops {
