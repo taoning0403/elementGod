@@ -34,6 +34,11 @@ export default new Router({
             redirect: '/shop'
           }
         ]
+      },
+      {
+        path:'/goods',
+        name:'goods',
+        component: () => import('./views/goods/goods.vue')
       }
-  ]
+    ]
 })
