@@ -13,42 +13,72 @@
           <p class="login-link">登陆/注册</p>
           <p class="login-msg"><i></i><span>登陆后享受更多特权</span></p>
         </dir>
-        <span class="logon-guide"><i></i></span>
+        <span class="logon-guide"><i class="icon-faxian iconfont"></i></span>
       </router-link>
     </section>
 
     <ProfileItem :infoItem="infoItem" />
-
+    <MyPanel :panelMy="panelMySite" />
+    <MyPanel :panelMy="panelMyBoon" />
+    <MyPanel :panelMy="panelMyServe" />
+    <div class="profile-yinsi">
+      <router-link to="/yinsi">隐私政策</router-link>
+    </div>
   </section>
 </template>
 <script>
 import ProfileItem from '@/components/profile/ProfileItem.vue';
+import MyPanel from '@/components/profile/MyPanel.vue';
 
 export default {
   data () {
     return {
       infoItem:[
-        { id: 1, name: '红包', classIcon: 'icon-films', classParent: 'index-info',classFont: 'index-font',
+        { id: 1, name: '红包', classIcon: 'icon-faxian', classParent: 'index-info',classFont: 'index-font',
         href: '/profile/benefit' },
-        { id: 2, name: '金币', classIcon: 'icon-films',classParent: 'index-info',classFont: 'index-font',
+        { id: 2, name: '金币', classIcon: 'icon-faxian',classParent: 'index-info',classFont: 'index-font',
         href: '/profile/benefit' }
       ],
-
+      panelMySite:[
+        { id: 1, name: '我的地址', linkC: ['panel-my-link','panel-my-margin','border-tops','border-bottoms'], asideC: ['icon-faxian', 'panel-my-site'],articleC: 'panel-my-art',iconC: 'icon-faxian',
+        href: '/profile/site' }
+      ],
+      panelMyBoon:[
+        { id: 1, name: '金币商城', linkC: ['panel-my-link','border-tops'], asideC: ['icon-faxian', 'panel-my-site'],articleC: 'panel-my-art',iconC: 'icon-faxian',
+        href: '/profile/site'
+        },
+        { id: 2, name: '分享拿20元现金', linkC: ['panel-boon-link','panel-my-link'], asideC: ['icon-faxian', 'panel-my-site'],articleC: ['panel-my-art','border-tops'],iconC: 'icon-faxian',
+        href: '/profile/site'
+        },
+      ],
+      panelMyServe:[
+        { id: 1, name: '我的客服', linkC: ['panel-my-link','border-tops'], asideC: ['icon-faxian', 'panel-my-site'],articleC: 'panel-my-art',iconC: 'icon-faxian',
+        href: '/profile/site'
+        },
+        { id: 2, name: '下载饿了么APP', linkC: ['panel-my-link'], asideC: ['icon-faxian', 'panel-my-site'],articleC: ['panel-my-art','border-tops'],iconC: 'icon-faxian',
+        href: '/profile/site'
+        },
+        { id: 3, name: '规则中心', linkC: ['border-bottoms','panel-my-link'], asideC: ['icon-faxian', 'panel-my-site'],articleC: ['panel-my-art','border-tops'],iconC: 'icon-faxian',
+        href: '/profile/site'
+        },
+      ],
     }
   },
     components: {
-      ProfileItem
+      ProfileItem,
+      MyPanel
     }
 }
 </script>
 
-
-
-
 <style <style lang="less" scoped>
+@import '~@/styles/common/variable.less';
+@import '~@/styles/common/mixins.less';
+
 .profile{
-  background: #eee;
+  background: #f7f3f3;
   height: 100%;
+  overflow: hidden;
   .top-login{
     width: 375px;
     height: 110px;
@@ -93,6 +123,17 @@ export default {
       display: block;
       width: 6px;
       height: 10px;
+    }
+    .icon-faxian{
+      color: #fff;
+    }
+  }
+  .profile-yinsi{
+    margin: 23px auto;
+    text-align: center;
+    font-size: 14px;
+    a{
+      color: #1868e0;
     }
   }
 }

@@ -6,7 +6,7 @@
       :to="item.href"
       :class="item.classParent"
     >
-      <p><i :class="item.classIcon">tubiao</i></p>
+      <p><i :class="item.classIcon" class="iconfont"></i></p>
       <p :class="item.classFont">{{ item.name }}</p>
     </router-link>
   </section>
@@ -43,12 +43,15 @@ export default {
       height: 84px;
       background: #fff;
     }
-    .icon-films{
+    .icon-faxian{
       width: 25px;
       height: 25px;
+      color: rgb(12, 245, 136);
+      font-size: 32px;
     }
     .index-font{
       font-size: 12px;
+      margin-top: 8px;
     }
   }
 
