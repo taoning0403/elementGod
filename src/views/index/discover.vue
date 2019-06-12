@@ -1,5 +1,6 @@
 <template>
   <div class="discover">
+    <div></div>
     <!-- 头部 -->
     <PartsItem :partsItem="partsItems"/>
     <!-- 中部 登陆过后缓存的
@@ -35,10 +36,15 @@
 </template>
 
 <script>
+// 组件
 import http from '@/utils/publicTools/http'
 import PartsItem from '@/components/discover/PartsItem.vue'
 import ActivityRecommend from '@/components/discover/ActivityRecommend.vue'
 import ActivityBody from '@/components/discover/ActivityBody.vue'
+
+// store 数据
+import { mapActions, mapState } from 'vuex'
+
 export default {
     data () {
       return {
@@ -170,36 +176,45 @@ export default {
             pricesOnsale: '￥3',
             giftTitle: '限时优惠'
           },
-        ]
+        ],
+        Par: []
       }
     },
 
-  methods : {
-    xshl () {
-      http.get('http://localhost:8080/ele/restapi/member/v1/discover?platform=1&block_index=0',
-      )
-      .then(res =>{
-        console.log(res);
-      })
-    },
-    xshls () {
-      http.get('http://localhost:8080/ele/restapi/member/gifts/suggest',
-      )
-      .then(res =>{
-        console.log(res);
-      })
-    }
+  computed: {
+    ...mapState('discover', [
+      'partsList'
+    ]),
+
   },
-  creared () {
+
+  methods: {
+    ...mapActions('discover', [
+      'GetPartsList'
+    ])
   },
-  mounted () {
-    this.xshl();
-    this.xshls();
-  },
+
   components: {
     PartsItem,
     ActivityRecommend,
     ActivityBody
+  },
+
+  watch: {
+      partsList : (newVal, oldVal) =>{
+        var Parts = newVal[1];
+        for(var i = 0;i < parts.length;i++){
+          this.Par[i] = Parts[i];
+        }
+      }
+  },
+
+  creared () {
+
+  },
+  mounted () {
+    this.GetPartsList();
+    console.log(this.$store.state.discover.partsList);
   }
 }
 </script>
