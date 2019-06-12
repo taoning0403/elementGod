@@ -1,21 +1,6 @@
 <template>
   <div class="discover">
-      <!-- <router-link
-      :class="partsLeft.link"
-      :to="partsLeft.to"
-      >
-        <div :class="partsLeft.leftBox">
-          <h2 :class="partsLeft.leftTitle">{{ partsLeft.title }}</h2>
-          <p :class="partsLeft.leftTitles">{{ partsLeft.titles }}</p>
-        </div>
-        <img
-          :class="partsLeft.leftImg"
-          :src=" partsLeft.leftImgSrc" >
-      </router-link> -->
-      <!-- <PartsItem :partsItem="partsItem"/>-->
-      <PartsItem :partsItem="partsItems"/>
-
-
+    <PartsItem :partsItem="partsItems"/>
     <section class="main"></section>
     <section class="bottom"></section>
   </div>

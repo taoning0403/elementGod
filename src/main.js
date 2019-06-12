@@ -9,13 +9,12 @@ import { Swipe, SwipeItem, AddressEdit, Toast } from 'vant'
 import './styles/base.less'
 
 Vue.use(ElementUI)
-   .use(Swipe)
-   .use(SwipeItem)
-   .use(AddressEdit)
-   .use(Toast)
+  .use(Swipe)
+  .use(SwipeItem)
+  .use(AddressEdit)
+  .use(Toast)
 
 Vue.config.productionTip = false
-
 
 new Vue({
   router,
