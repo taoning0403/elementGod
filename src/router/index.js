@@ -7,34 +7,34 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: () => import('./views/index/index.vue'),
+      component: () => import('../views/index/index.vue'),
       children: [
         {
           path: 'shop',
           name: 'shop',
-          component: () => import('./views/index/shop.vue')
+          component: () => import('../views/index/shop.vue')
         },
         {
           path: 'discover',
           name: 'discover',
-          component: () => import('./views/index/discover.vue')
+          component: () => import('../views/index/discover.vue')
         },
         {
           path: 'profile',
           name: 'profile',
-          component: () => import('./views/index/profile.vue'),
+          component: () => import('../views/index/profile.vue'),
           children: [
             {
               path: '',
               name: 'ProfileItem',
-              component: () => import('./components/publicComponent/ProfileItem.vue')
+              component: () => import('../components/publicComponent/ProfileItem.vue')
             }
           ]
         },
         {
           path: 'order',
           name: 'order',
-          component: () => import('./views/index/order.vue')
+          component: () => import('../views/index/order.vue')
         },
         {
           path: '',
@@ -45,27 +45,27 @@ export default new Router({
     {
       path: '/goods',
       name: 'goods',
-      component: () => import('./views/goods/goods.vue')
+      component: () => import('../views/goods/goods.vue')
     },
     {
       path: '/login',
       name: 'logins',
-      component: () => import('./views/login/login.vue')
+      component: () => import('../views/login/login.vue')
     },
     {
       path: '/profile/benefit',
       name: 'benefits',
-      component: () => import('./components/privateComponents/benefit.vue')
+      component: () => import('../components/privateComponents/benefit.vue')
     },
     {
       path: '/checkout/checkout',
       name: 'checkout',
-      component: () => import('./views/checkout/checkout.vue')
+      component: () => import('../views/checkout/checkout.vue')
     },
     {
       path: '/checkout/address',
       name: 'address',
-      component: () => import('./views/checkout/address.vue')
+      component: () => import('../views/checkout/address.vue')
     }
   ]
 })
