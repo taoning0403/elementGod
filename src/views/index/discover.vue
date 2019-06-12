@@ -1,6 +1,8 @@
 <template>
   <div class="discover">
+    <!-- 头部 -->
     <PartsItem :partsItem="partsItems"/>
+    <!-- 中部 -->
     <section class="discover-main">
       <div class="activity-header">
         <span class=" activity-spana"></span>
@@ -10,8 +12,25 @@
       </div>
       <p class="activity-msg">你的口味我都懂得</p>
       <ActivityRecommend :activityItem="activityItem" />
+      <p class="activity-footer">
+        查看更多<i class="el-icon-arrow-right"></i>
+      </p>
     </section>
-    <section class="bottom"></section>
+    <!-- 下部分 -->
+    <section class="discover-bottom">
+      <div class="activity-header">
+        <span class=" activity-spana"></span>
+        <i class="el-icon-time " ></i>
+        <strong class="activity-title">限时好礼</strong>
+        <span class=" activity-spanb"></span>
+      </div>
+      <p class="activity-msg">金币换好礼</p>
+      <ActivityBody :exchangeItem=" exchangeItem"/>
+      <p class="activity-footer">
+        查看更多<i class="el-icon-arrow-right"></i>
+      </p>
+
+    </section>
   </div>
 </template>
 
@@ -19,6 +38,7 @@
 import http from '@/utils/publicTools/http'
 import PartsItem from '@/components/discover/PartsItem.vue'
 import ActivityRecommend from '@/components/discover/ActivityRecommend.vue'
+import ActivityBody from '@/components/discover/ActivityBody.vue'
 export default {
     data () {
       return {
@@ -123,6 +143,33 @@ export default {
             pricesFav: '满35减13',
             shopName: ' 熊猫记    (固戍店)'
           },
+        ],
+        exchangeItem:
+        [
+          {
+            id: 1,name:'',
+            giftImg: 'https://fuss10.elemecdn.com/7/ec/adf8ae0fd52a0eb56f4332fb61ac2jpeg.jpeg?imageMogr/format/webp/',
+            giftSubtitle: '3元品质联盟红包',
+            prices: '30金币',
+            pricesOnsale: '￥3',
+            giftTitle: '限时优惠'
+          },
+          {
+            id: 2,name:'',
+            giftImg: 'https://fuss10.elemecdn.com/e/b5/605a11eae79849240113271dd1b94jpeg.jpeg?imageMogr/format/webp/',
+            giftSubtitle: '3元品质联盟红包',
+            prices: '30金币',
+            pricesOnsale: '￥3',
+            giftTitle: '限时优惠'
+          },
+          {
+            id: 3,name:'',
+            giftImg: 'https://fuss10.elemecdn.com/7/ad/f0132ee0fee6c57253ada4573364ejpeg.jpeg?imageMogr/format/webp/',
+            giftSubtitle: '3元品质联盟红包',
+            prices: '30金币',
+            pricesOnsale: '￥3',
+            giftTitle: '限时优惠'
+          },
         ]
       }
     },
@@ -143,7 +190,8 @@ export default {
   },
   components: {
     PartsItem,
-    ActivityRecommend
+    ActivityRecommend,
+    ActivityBody
   }
 }
 </script>
@@ -153,6 +201,7 @@ export default {
   height: 100%;
   background: rgb(252, 248, 248);
   width: 100%;
+  overflow-y: auto;
   .discover-main{
     height: auto;
     background-color: #fff;
@@ -169,9 +218,9 @@ export default {
         color: rgb(241, 100, 19);
       }
       .activity-title{
-        font-weight: 600px;
-        font-size: 16px;
-        color: #000;
+        font-weight: 900;
+        font-size: 18px;
+        color: #555;
         margin: 0 2px;
         display: block;
       }
@@ -194,8 +243,8 @@ export default {
         &::after {
           content: '';
           position: absolute;
-          width: 4px;
-          height: 4px;
+          width: 6px;
+          height: 6px;
           right:0;
           top: 50%;
           background: #333;
@@ -223,8 +272,8 @@ export default {
         &::before {
           content: '';
           position: absolute;
-          width: 4px;
-          height: 4px;
+          width: 6px;
+          height: 6px;
           left: 0px;
           top: 50%;
           background: #333;
@@ -243,10 +292,118 @@ export default {
       font-size: 10px;
       color: rgb(173, 169, 169);
     }
+    .activity-footer{
+      width: 100%;
+      height: 33px;
+      line-height: 33px;
+      padding: 16px 0;
+      text-align: center;
+      color: rgb(173, 169, 169);
+      font-size: 12px;
+    }
+
   }
-  .bottom{
-    height: 400px;
-    background: rgb(214, 208, 208);
+  .discover-bottom{
+    height: auto;
+    min-height: 200px;
+    background: #fff;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    .activity-header{
+      height: 41px;
+      padding-top: 20px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      text-align: center;
+      display: flex;
+      justify-content:center;
+      .el-icon-time{
+        color: rgb(241, 100, 19);
+      }
+      .activity-title{
+        font-weight: 900;
+        font-size: 18px;
+        color: #555;
+        margin: 0 2px;
+        display: block;
+      }
+      // 左横线--点
+      .activity-spana{
+        width: 20px;
+        height: 1px;
+        margin: 8px 4px 8px 0;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 20px;
+          top: 50%;
+          left: 0;
+          height: 1px;
+          background: #333;
+          transform: scaleY(.5);
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          right:0;
+          top: 50%;
+          background: #333;
+          // transform: scaleY(.5);
+          border-radius: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      // 右横线--点
+      .activity-spanb{
+        width: 20px;
+        height: 1px;
+        margin: 8px 4px 8px 0;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 20px;
+          top: 50%;
+          right: 0;
+          height: 1px;
+          background: #333;
+          transform: scaleY(.5);
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          left: 0px;
+          top: 50%;
+          background: #333;
+          // transform: scaleY(.5);
+          border-radius: 50%;
+          transform: translateY(-50%)
+        }
+      }
+    }
+    .activity-msg{
+      height: 20px;
+      padding-bottom: 8px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 10px;
+      color: rgb(173, 169, 169);
+    }
+    .activity-footer{
+      width: 100%;
+      height: 33px;
+      line-height: 33px;
+      padding: 16px 0;
+      text-align: center;
+      color: rgb(173, 169, 169);
+      font-size: 12px;
+    }
   }
 }
 </style>

@@ -71,6 +71,11 @@ export default new Router({
       path: '/shopDetails/:activityId',
       name: 'shopDetails',
       component: () => import('../components/discover/ShopDetails.vue')
+    },
+    {
+      path: '/exchange/?exchangeId',
+      name: 'ActivityBody',
+      component: () => import('../components/discover/ActivityBody.vue')
     }
   ]
 })

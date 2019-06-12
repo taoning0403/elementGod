@@ -67,6 +67,7 @@ export default {
       width: 172px;
       height: 265px;
       margin: 2px;
+      border: 1px dotted rgb(236, 228, 228);
       .recommend-img{
         width: 172px;
         height: 172px;
