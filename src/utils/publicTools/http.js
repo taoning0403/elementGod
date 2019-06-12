@@ -9,7 +9,7 @@ http.defaults.timeout = 10000
 
 http.interceptors.response.use(response => {
   let res = response.data
-  if (res.status === 0) {
+  if (res) {
     return res
   } else {
     Toast(res.msg)
