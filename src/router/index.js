@@ -21,7 +21,7 @@ export default new Router({
         },
         {
           path: 'profile',
-          name: 'profile',
+          name: '',
           component: () => import('../views/index/profile.vue'),
           children: [
             {

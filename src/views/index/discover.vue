@@ -2,7 +2,7 @@
   <div class="discover">
     <!-- 头部 -->
     <PartsItem :partsItem="partsItems"/>
-    <!-- 中部 -->
+    <!-- 中部 登陆过后缓存的
     <section class="discover-main">
       <div class="activity-header">
         <span class=" activity-spana"></span>
@@ -15,7 +15,7 @@
       <p class="activity-footer">
         查看更多<i class="el-icon-arrow-right"></i>
       </p>
-    </section>
+    </section>-->
     <!-- 下部分 -->
     <section class="discover-bottom">
       <div class="activity-header">
@@ -176,7 +176,14 @@ export default {
 
   methods : {
     xshl () {
-      http.get('http://localhost:8080/ele/restapi/shopping/v1/sale_list_index?type=special_food&latitude=-1&longitude=-1&params=%7B%7D',
+      http.get('http://localhost:8080/ele/restapi/member/v1/discover?platform=1&block_index=0',
+      )
+      .then(res =>{
+        console.log(res);
+      })
+    },
+    xshls () {
+      http.get('http://localhost:8080/ele/restapi/member/gifts/suggest',
       )
       .then(res =>{
         console.log(res);
@@ -186,7 +193,8 @@ export default {
   creared () {
   },
   mounted () {
-    // this.xshl();
+    this.xshl();
+    this.xshls();
   },
   components: {
     PartsItem,
