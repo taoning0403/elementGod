@@ -11,10 +11,10 @@ export default {
   data () {
     return {
       tabs: [
-        { id: 1, name: '首页', icon: 'icon-changyonglogo40', href: '/shop' },
-        { id: 2, name: '发现', icon: 'icon-faxian', href: '/discover' },
-        { id: 3, name: '订单', icon: 'icon-icon--copy', href: '/order' },
-        { id: 4, name: '我的',names: 'profiles', icon: 'icon-wode', href: '/profile' }
+        { id: 1, name: '首页', icon: 'el-icon-platform-eleme', href: '/shop' },
+        { id: 2, name: '发现', icon: 'el-icon-discover', href: '/discover' },
+        { id: 3, name: '订单', icon: 'el-icon-notebook-2', href: '/order' },
+        { id: 4, name: '我的', icon: 'el-icon-user', href: '/profile' }
       ]
     }
   },

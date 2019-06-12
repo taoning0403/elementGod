@@ -56,6 +56,16 @@ export default new Router({
       path: '/profile/benefit',
       name: 'benefits',
       component: () => import('../components/profile/profilePrivate/benefit.vue')
+    },
+    {
+      path: '/checkout/checkout',
+      name: 'checkout',
+      component: () => import('../views/checkout/checkout.vue')
+    },
+    {
+      path: '/checkout/address',
+      name: 'address',
+      component: () => import('../views/checkout/address.vue')
     }
   ]
 })

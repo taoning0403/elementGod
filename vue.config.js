@@ -12,31 +12,15 @@ module.exports = {
       // value - 代理选项设置
       // http://localhost:8080/maoyan/api/find => http://m.maoyan.com/api/find
       // pathRewrite 路径重写 key:重写的路径名称 value设置为''
-      '/maoyan': {
-        target: 'http://m.maoyan.com/',
-        pathRewrite: {
-          '^/maoyan': ''
-        }
-      },
-
-      '/meituan': {
-        target: 'http://i.waimai.meituan.com/',
-        pathRewrite: {
-          '^/meituan': ''
-        }
-      },
-
-      '/mg': {
-        target: 'http://movie.miguvideo.com/',
-        pathRewrite: {
-          '^/mg': ''
-        }
-      },
-
       '/ele': {
         target: 'https://h5.ele.me',
         pathRewrite: {
           '^/ele': ''
+
+      '/elme': {
+        target: 'https://h5.ele.me/',
+        pathRewrite: {
+          '^/elme': ''
         }
       }
     }
