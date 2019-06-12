@@ -66,6 +66,11 @@ export default new Router({
       path: '/checkout/address',
       name: 'address',
       component: () => import('../views/checkout/address.vue')
+    },
+    {
+      path: '/shopDetails/:activityId',
+      name: 'shopDetails',
+      component: () => import('../components/discover/ShopDetails.vue')
     }
   ]
 })
