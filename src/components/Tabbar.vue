@@ -3,7 +3,7 @@
     <router-link
       v-for="tab in tabs"
       :key="tab.id"
-      :to="tab.href"
+      :to="{path:tab.href}"
       active-class="z-act"
       tag="li"
     >
