@@ -27,7 +27,6 @@
 
 <script>
 import { mapActions, mapState } from 'vuex'
-import { log } from 'util';
 
 export default {
   data () {
