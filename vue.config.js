@@ -16,7 +16,8 @@ module.exports = {
         target: 'https://h5.ele.me',
         pathRewrite: {
           '^/ele': ''
-
+        }
+      },
       '/elme': {
         target: 'https://h5.ele.me/',
         pathRewrite: {
