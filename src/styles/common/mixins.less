@@ -1,4 +1,6 @@
 //公用样式块
+
+// 单上
 .border-top {
   position: relative;
   &::before {
@@ -11,7 +13,7 @@
     transform: scaleY(.5);
   }
 }
-
+// 单下
 .border-bottom {
   position: relative;
   &::before {
@@ -23,4 +25,62 @@
     background: #ededed;
     transform: scaleY(.5);
   }
+}
+// 单右
+.border-right {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #ededed;
+    transform: scaleX(.5);
+  }
+}
+
+// 上下边框
+.border-tops {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 1px;
+    background: #e7e3e3;
+    transform: scaleY(.5);
+  }
+}
+
+.border-bottoms {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background: #e7e3e3;
+    transform: scaleY(.5);
+  }
+}
+
+// 四面边框
+.border {
+  position: relative;
+  &::after {
+    content: '';
+    transform: scale(.5);
+    position: absolute;
+    border: 1px solid #ff5f16;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    border-radius: 4px;
+  }
+
 }

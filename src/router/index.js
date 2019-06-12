@@ -27,7 +27,7 @@ export default new Router({
             {
               path: '',
               name: 'ProfileItem',
-              component: () => import('../components/publicComponent/ProfileItem.vue')
+              component: () => import('../components/profile/ProfileItem.vue')
             }
           ]
         },
@@ -55,7 +55,7 @@ export default new Router({
     {
       path: '/profile/benefit',
       name: 'benefits',
-      component: () => import('../components/privateComponents/benefit.vue')
+      component: () => import('../components/profile/profilePrivate/benefit.vue')
     },
     {
       path: '/checkout/checkout',

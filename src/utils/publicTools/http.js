@@ -2,8 +2,8 @@ import axios from 'axios'
 import { Toast } from 'vant'
 const http = axios.create()
 
-//baseURl先不写
-//http.defaults.baseURL = 
+// baseURl先不写
+// http.defaults.baseURL=
 
 http.defaults.timeout = 10000
 
