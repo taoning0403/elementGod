@@ -84,3 +84,68 @@
   }
 
 }
+
+
+// 左横线
+.border-lefts {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background: #333;
+    transform: scaleY(.5);
+  }
+}
+
+// 左圆点
+.border-left-radius {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    right:0;
+    top: 50%;
+    height: 4px;
+    background: #333;
+    // transform: scaleY(.5);
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+// 右横线
+.border-rights {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    background: #333;
+    transform: scaleY(.5);
+  }
+}
+
+// 右圆点
+.border-right-radius {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    left: 0px;
+    top: 50%;
+    height: 4px;
+    background: #333;
+    // transform: scaleY(.5);
+    border-radius: 50%;
+    transform: translateY(-50%)
+  }
+}

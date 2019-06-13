@@ -21,7 +21,7 @@ export default new Router({
         },
         {
           path: 'profile',
-          name: 'profile',
+          name: '',
           component: () => import('../views/index/profile.vue'),
           children: [
             {
@@ -71,6 +71,16 @@ export default new Router({
       path: '/checkout/notes',
       name: 'notes',
       component: () => import('../views/checkout/notes.vue')
+    },
+    {
+      path: '/shopDetails/:activityId',
+      name: 'shopDetails',
+      component: () => import('../components/discover/ShopDetails.vue')
+    },
+    {
+      path: '/exchange/?exchangeId',
+      name: 'ActivityBody',
+      component: () => import('../components/discover/ActivityBody.vue')
     }
   ]
 })
