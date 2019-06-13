@@ -5,6 +5,7 @@
     <Shoplist />
     <Banner />
     <Ossume />
+    <Filterbtn />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Search from '@/components/shop/Search.vue'
 import Shoplist from '@/components/shop/Shoplist.vue'
 import Banner from '@/components/shop/Banner.vue'
 import Ossume from '@/components/shop/Ossume.vue'
+import Filterbtn from '@/components/shop/Filterbtn.vue'
 
 export default {
   components: {
@@ -21,7 +23,8 @@ export default {
     Search,
     Shoplist,
     Banner,
-    Ossume
+    Ossume,
+    Filterbtn
   }
   
 }
