@@ -6,6 +6,7 @@
     <Banner />
     <Ossume />
     <Filterbtn />
+    <Restaurantlist />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Shoplist from '@/components/shop/Shoplist.vue'
 import Banner from '@/components/shop/Banner.vue'
 import Ossume from '@/components/shop/Ossume.vue'
 import Filterbtn from '@/components/shop/Filterbtn.vue'
+import Restaurantlist from '@/components/shop/Restaurantlist.vue'
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     Shoplist,
     Banner,
     Ossume,
-    Filterbtn
+    Filterbtn,
+    Restaurantlist
   }
   
 }

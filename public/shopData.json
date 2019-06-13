@@ -1,0 +1,1402 @@
+{
+  "has_next": true,
+  "items": [
+    {
+      "restaurant": {
+        "act_tag": 0,
+        "activities": [
+          {
+            "attribute": "{\"48\": {\"1\": 20.0, \"0\": 0}, \"98\": {\"1\": 25.0, \"0\": 0}, \"198\": {\"1\": 40.0, \"0\": 0}}",
+            "description": "满48减20，满98减25，满198减40",
+            "icon_color": "f07373",
+            "icon_name": "减",
+            "id": 21748717810,
+            "is_exclusive_with_food_activity": true,
+            "name": "6月探炉工作日",
+            "tips": "满48减20，满98减25，满198减40",
+            "type": 102
+          },
+          {
+            "description": "特价商品39.9元起",
+            "icon_color": "f1884f",
+            "icon_name": "特",
+            "id": 21777476818,
+            "name": "单品定价",
+            "tips": "单品定价"
+          },
+          {
+            "attribute": "25.0",
+            "description": "新用户下单立减25元",
+            "icon_color": "70bc46",
+            "icon_name": "首",
+            "id": 21775048690,
+            "is_exclusive_with_food_activity": true,
+            "name": "新用户立减(不与其他活动共享)",
+            "tips": "新用户下单立减25元",
+            "type": 103
+          },
+          {
+            "attribute": "3.0",
+            "description": "本店新用户立减3元",
+            "icon_color": "00b762",
+            "icon_name": "新",
+            "id": 921418442,
+            "is_exclusive_with_food_activity": true,
+            "name": "门店新客立减",
+            "tips": "本店新用户立减3元",
+            "type": 108
+          }
+        ],
+        "address": "深圳市福田区华强北街道华强北路西侧东方时代广场裙楼九层903",
+        "authentic_id": 3315052064481648,
+        "business_info": "{\"recent_order_num_display\": \"月售846\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"48减20\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"98减25\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"198减40\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"8元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减25\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"门店新客减3\", \"border\": \"4ce23028\", \"background\": null, \"type\": 6, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"39.9元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}], \"ad_info\": null}",
+        "delivery_fee_discount": 2,
+        "delivery_mode": {
+          "border": "",
+          "color": "2395FF",
+          "gradient": {
+            "rgb_from": "00AAFF",
+            "rgb_to": "0085FF"
+          },
+          "icon_hash": "b9b45d2f6ff0dbeef3a78ef0e4e90abapng",
+          "id": 1,
+          "is_solid": true,
+          "text": "蜂鸟专送",
+          "text_color": "FFFFFF"
+        },
+        "description": "",
+        "distance": 276,
+        "favored": false,
+        "flavors": [
+          {
+            "id": 1354,
+            "name": "烤鱼"
+          },
+          {
+            "id": 882,
+            "name": "其他快餐"
+          }
+        ],
+        "float_delivery_fee": 2,
+        "float_minimum_order_amount": 20,
+        "has_story": false,
+        "id": "E18068299445471177227",
+        "image_path": "3128f04390659d569b3c4bb413a2e755png",
+        "is_new": false,
+        "is_premium": false,
+        "is_star": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 22.545255,
+        "longitude": 114.086319,
+        "max_applied_quantity_per_order": -1,
+        "name": "探炉（华强北店）",
+        "next_business_time": "明天 10:40",
+        "only_use_poi": false,
+        "opening_hours": [
+          "10:40/21:20"
+        ],
+        "order_lead_time": 40,
+        "out_of_range": false,
+        "phone": "0755-83249460",
+        "piecewise_agent_fee": {
+          "description": "配送费¥2",
+          "extra_fee": -2,
+          "is_extra": true,
+          "no_subsidy_fee": "¥4",
+          "rules": [
+            {
+              "fee": 2,
+              "price": 20
+            }
+          ],
+          "tips": "配送费¥2"
+        },
+        "platform": 0,
+        "posters": [],
+        "promotion_info": "",
+        "rating": 4.6,
+        "rating_count": 108,
+        "recent_order_num": 846,
+        "recommend": {
+          "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+          "is_ad": false,
+          "track": "{\"rankType\":\"27\"}"
+        },
+        "recommend_reasons": [],
+        "regular_customer_count": 0,
+        "scheme": "https://h5.ele.me/shop/#id=E18068299445471177227",
+        "status": 1,
+        "support_tags": [
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+            "text": "烤鱼",
+            "type": 1
+          },
+          {
+            "border": "4c000000",
+            "color": "99000000",
+            "text": "支持自取",
+            "type": 20
+          },
+          {
+            "border": "dddddd",
+            "color": "333333",
+            "text": "品质联盟"
+          }
+        ],
+        "supports": [],
+        "theme": {
+          "default_color": "2395ff",
+          "header_style": 0,
+          "hongbao_style": 0,
+          "price_color": "ff5339",
+          "third_tab_name": "商家",
+          "vanish_fields": []
+        },
+        "type": 0
+      }
+    },
+    {
+      "restaurant": {
+        "act_tag": 0,
+        "activities": [
+          {
+            "attribute": "{\"88\": {\"1\": 24.0, \"0\": 0}, \"60\": {\"1\": 20.0, \"0\": 0}, \"30\": {\"1\": 5.0, \"0\": 0}}",
+            "description": "满30减5，满60减20，满88减24",
+            "icon_color": "f07373",
+            "icon_name": "减",
+            "id": 21771889298,
+            "is_exclusive_with_food_activity": true,
+            "name": "九毛九6月活动",
+            "tips": "满30减5，满60减20，满88减24",
+            "type": 102
+          },
+          {
+            "attribute": "27.0",
+            "description": "新用户下单立减27元",
+            "icon_color": "70bc46",
+            "icon_name": "首",
+            "id": 21747956682,
+            "is_exclusive_with_food_activity": true,
+            "name": "新用户立减(不与其他活动共享)",
+            "tips": "新用户下单立减27元",
+            "type": 103
+          },
+          {
+            "description": "特价商品16.9元起",
+            "icon_color": "f1884f",
+            "icon_name": "特",
+            "id": 21732619923,
+            "name": "单品定价",
+            "tips": "单品定价"
+          }
+        ],
+        "address": "深圳市福田区华强北路西侧9楼906号铺",
+        "authentic_id": 1365072065268822,
+        "business_info": "{\"recent_order_num_display\": \"月售419\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"30减5\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"60减20\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"88减24\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减27\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"16.9元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"返红包\", \"border\": \"4ce23028\", \"background\": null, \"type\": 9, \"icon\": null}], \"ad_info\": null}",
+        "delivery_fee_discount": 0,
+        "delivery_mode": {
+          "border": "",
+          "color": "2395FF",
+          "gradient": {
+            "rgb_from": "00AAFF",
+            "rgb_to": "0085FF"
+          },
+          "icon_hash": "b9b45d2f6ff0dbeef3a78ef0e4e90abapng",
+          "id": 1,
+          "is_solid": true,
+          "text": "蜂鸟专送",
+          "text_color": "FFFFFF"
+        },
+        "description": "九毛九（华强茂业店）",
+        "distance": 244,
+        "favored": false,
+        "flavors": [
+          {
+            "id": 882,
+            "name": "其他快餐"
+          }
+        ],
+        "float_delivery_fee": 4,
+        "float_minimum_order_amount": 20,
+        "folding_restaurant_brand": "九毛九",
+        "folding_restaurants": [
+          {
+            "distance": 1019,
+            "id": "E14182893751605909203",
+            "name": "九毛九(世纪汇店)",
+            "order_lead_time": 49,
+            "scheme": "https://h5.ele.me/shop/#id=E14182893751605909203",
+            "type": 0
+          },
+          {
+            "distance": 3287,
+            "id": "E7031147609855903756",
+            "name": "九毛九（地王广场店）",
+            "order_lead_time": 47,
+            "scheme": "https://h5.ele.me/shop/#id=E7031147609855903756",
+            "type": 0
+          }
+        ],
+        "has_story": false,
+        "id": "E14911358660078476540",
+        "image_path": "209d822052e439cf637d91012bd760b9png",
+        "is_new": false,
+        "is_premium": true,
+        "is_star": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 22.54547,
+        "longitude": 114.08634,
+        "max_applied_quantity_per_order": -1,
+        "name": "九毛九（深圳华强茂业店）",
+        "next_business_time": "明天 11:00",
+        "only_use_poi": false,
+        "opening_hours": [
+          "11:00/14:30",
+          "17:00/21:00"
+        ],
+        "order_lead_time": 53,
+        "out_of_range": false,
+        "phone": "15217803480 0755-83997451",
+        "piecewise_agent_fee": {
+          "description": "配送费¥4",
+          "extra_fee": 0,
+          "is_extra": false,
+          "no_subsidy_fee": "",
+          "rules": [
+            {
+              "fee": 4,
+              "price": 20
+            }
+          ],
+          "tips": "配送费¥4"
+        },
+        "platform": 0,
+        "posters": [],
+        "promotion_info": "①由于发票系统升级，本店全面使用电子發票，如需开具，请备注公司名称、纳税人识别号以及邮箱号码，带来不便敬请谅解！②菜品不配米饭，如有需要请另点，谢谢！",
+        "rating": 4.8,
+        "rating_count": 80,
+        "recent_order_num": 419,
+        "recommend": {
+          "color": "#e8470b",
+          "image_hash": "",
+          "is_ad": false,
+          "reason": "",
+          "track": "{\"rankType\":\"27\"}"
+        },
+        "recommend_reasons": [],
+        "regular_customer_count": 0,
+        "scheme": "https://h5.ele.me/shop/#id=E14911358660078476540",
+        "status": 1,
+        "support_tags": [
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+            "text": "其他快餐",
+            "type": 1
+          },
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "text": "口碑人气好店"
+          },
+          {
+            "border": "dddddd",
+            "color": "333333",
+            "text": "品质联盟"
+          }
+        ],
+        "supports": [
+          {
+            "border": "90dddddd",
+            "description": "该商家支持开发票，请在下单时填写好发票抬头",
+            "icon_color": "999999",
+            "icon_name": "票",
+            "id": 4,
+            "name": "开发票",
+            "text_color": "666666",
+            "two_characters_icon_name": "发票"
+          }
+        ],
+        "tags": [],
+        "target_tag_path": "d6a7283753e66cad4c4dc9a459d96a7fpng",
+        "theme": {
+          "default_color": "2395ff",
+          "header_style": 0,
+          "hongbao_style": 0,
+          "price_color": "ff5339",
+          "third_tab_name": "商家",
+          "vanish_fields": []
+        },
+        "type": 0
+      }
+    },
+    {
+      "restaurant": {
+        "act_tag": 0,
+        "activities": [
+          {
+            "attribute": "{\"75\": {\"1\": 38.0, \"0\": 0}, \"60\": {\"1\": 28.0, \"0\": 0}, \"29\": {\"1\": 16.0, \"0\": 0}, \"45\": {\"1\": 22.0, \"0\": 0}}",
+            "description": "满29减16，满45减22，满60减28，满75减38",
+            "icon_color": "f07373",
+            "icon_name": "减",
+            "id": 21750177738,
+            "is_exclusive_with_food_activity": true,
+            "name": "manjian",
+            "tips": "满29减16，满45减22，满60减28，满75减38",
+            "type": 102
+          },
+          {
+            "attribute": "{\"1.0\": {\"quantity\": 2, \"must_pay_online\": 1, \"name\": \"\\u5fb7\\u8299\\u5de7\\u514b\\u529b\"}}",
+            "description": "满1元赠送德芙巧克力2份",
+            "icon_color": "3cc791",
+            "icon_name": "赠",
+            "id": 21764547594,
+            "is_exclusive_with_food_activity": true,
+            "name": "赠品活动",
+            "tips": "满1元赠送德芙巧克力2份",
+            "type": 106
+          },
+          {
+            "description": "特价商品4.6元起",
+            "icon_color": "f1884f",
+            "icon_name": "换",
+            "id": 21759141850,
+            "name": "超值换购",
+            "tips": "超值换购"
+          },
+          {
+            "attribute": "17.0",
+            "description": "新用户下单立减17元",
+            "icon_color": "70bc46",
+            "icon_name": "首",
+            "id": 21737068122,
+            "is_exclusive_with_food_activity": true,
+            "name": "新用户立减(不与其他活动共享)",
+            "tips": "新用户下单立减17元",
+            "type": 103
+          },
+          {
+            "description": "折扣商品6折起",
+            "icon_color": "f07373",
+            "icon_name": "折",
+            "id": 21626770746,
+            "name": "单品折扣",
+            "tips": "单品折扣"
+          }
+        ],
+        "address": "深圳市福田区华强北街道兰天路10号10号商铺",
+        "authentic_id": 4385032058797944,
+        "business_info": "{\"recent_order_num_display\": \"月售2762\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"29减16\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"45减22\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"60减28\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"75减38\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"会员特价\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 3, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"6折\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"第2份1元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"赠\", \"border\": \"4ce23028\", \"background\": null, \"type\": 10, \"icon\": null}], \"ad_info\": null}",
+        "delivery_fee_discount": 2,
+        "delivery_mode": {
+          "border": "",
+          "color": "2395FF",
+          "gradient": {
+            "rgb_from": "00AAFF",
+            "rgb_to": "0085FF"
+          },
+          "icon_hash": "b9b45d2f6ff0dbeef3a78ef0e4e90abapng",
+          "id": 1,
+          "is_solid": true,
+          "text": "蜂鸟专送",
+          "text_color": "FFFFFF"
+        },
+        "description": "小马哥金牌卤肉饭源自台湾配方，选用上等带膘五花肉经过5小时慢火熬制。我们把特色和地道的台湾味道呈现在您的面前，希望在快节奏的都市生活通过我们的食品能让您感受到一份来自宝岛的浓浓情意和问候。",
+        "distance": 1107,
+        "favored": false,
+        "flavors": [
+          {
+            "id": 882,
+            "name": "其他快餐"
+          },
+          {
+            "id": 978,
+            "name": "其他小吃"
+          }
+        ],
+        "float_delivery_fee": 2,
+        "float_minimum_order_amount": 20,
+        "folding_restaurant_brand": "小马哥卤肉饭",
+        "folding_restaurants": [
+          {
+            "distance": 3017,
+            "id": "E9245487575792048883",
+            "name": "小马哥卤肉饭(馔山餐饮深药大厦店)",
+            "order_lead_time": 40,
+            "scheme": "https://h5.ele.me/shop/#id=E9245487575792048883",
+            "type": 0
+          }
+        ],
+        "has_story": false,
+        "id": "E7648841519112540277",
+        "image_path": "a6587ded877fd8d2e30dcd349d4f8a06png",
+        "is_new": false,
+        "is_premium": true,
+        "is_star": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 22.545748,
+        "longitude": 114.093533,
+        "max_applied_quantity_per_order": -1,
+        "name": "小马哥卤肉饭(馔山餐饮兰天路店)",
+        "next_business_time": "明天 09:30",
+        "only_use_poi": false,
+        "opening_hours": [
+          "09:30/20:30"
+        ],
+        "order_lead_time": 40,
+        "out_of_range": false,
+        "phone": "13266520975 021-60782942",
+        "piecewise_agent_fee": {
+          "description": "配送费¥2",
+          "extra_fee": -2,
+          "is_extra": true,
+          "no_subsidy_fee": "¥4",
+          "rules": [
+            {
+              "fee": 2,
+              "price": 20
+            }
+          ],
+          "tips": "配送费¥2"
+        },
+        "platform": 0,
+        "posters": [],
+        "promotion_info": "欢迎进入“小马哥卤肉饭”。订餐须知：为了确保能及时用餐，希望您提前45分钟以上预定下单，避开高峰时期。享受500元满减优惠，须提前1小时预定，谢谢~",
+        "rating": 4.5,
+        "rating_count": 401,
+        "recent_order_num": 2762,
+        "recommend": {
+          "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+          "is_ad": false,
+          "track": "{\"rankType\":\"5\"}"
+        },
+        "recommend_reasons": [
+          {
+            "name": "味道超赞"
+          }
+        ],
+        "regular_customer_count": 0,
+        "scheme": "https://h5.ele.me/shop/#id=E7648841519112540277",
+        "status": 1,
+        "support_tags": [
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+            "text": "其他快餐",
+            "type": 1
+          }
+        ],
+        "supports": [
+          {
+            "border": "90dddddd",
+            "description": "该商家支持开发票，请在下单时填写好发票抬头",
+            "icon_color": "999999",
+            "icon_name": "票",
+            "id": 4,
+            "name": "开发票",
+            "text_color": "666666",
+            "two_characters_icon_name": "发票"
+          }
+        ],
+        "tags": [],
+        "target_tag_path": "d53fc0cb4dc67973038cbc591938a1b6png",
+        "theme": {
+          "default_color": "2395ff",
+          "header_style": 0,
+          "hongbao_style": 0,
+          "price_color": "ff5339",
+          "third_tab_name": "商家",
+          "vanish_fields": []
+        },
+        "type": 0
+      }
+    },
+    {
+      "restaurant": {
+        "act_tag": 0,
+        "activities": [
+          {
+            "attribute": "{\"65\": {\"1\": 50.0, \"0\": 0}, \"26\": {\"1\": 25.0, \"0\": 0}, \"155\": {\"1\": 92.0, \"0\": 0}, \"108\": {\"1\": 72.0, \"0\": 0}}",
+            "description": "满26减25，满65减50，满108减72，满155减92",
+            "icon_color": "f07373",
+            "icon_name": "减",
+            "id": 21768850994,
+            "is_exclusive_with_food_activity": true,
+            "name": "蜀湘",
+            "tips": "满26减25，满65减50，满108减72，满155减92",
+            "type": 102
+          },
+          {
+            "attribute": "17.0",
+            "description": "新用户下单立减17元",
+            "icon_color": "70bc46",
+            "icon_name": "首",
+            "id": 21740343754,
+            "is_exclusive_with_food_activity": true,
+            "name": "新用户立减(不与其他活动共享)",
+            "tips": "新用户下单立减17元",
+            "type": 103
+          },
+          {
+            "description": "特价商品2.5元起",
+            "icon_color": "f1884f",
+            "icon_name": "换",
+            "id": 21633315186,
+            "name": "超值换购",
+            "tips": "超值换购"
+          },
+          {
+            "attribute": "{\"55.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u53ef\\u4e50330ml\\u4e00\\u652f\"}}",
+            "description": "满55元赠送可乐330ml一支1份",
+            "icon_color": "3cc791",
+            "icon_name": "赠",
+            "id": 21624737226,
+            "is_exclusive_with_food_activity": true,
+            "name": "赠品活动",
+            "tips": "满55元赠送可乐330ml一支1份",
+            "type": 106
+          }
+        ],
+        "address": "深圳市福田区南园街道巴登社区巴登村148号102",
+        "authentic_id": 8395062071049926,
+        "bidding": "{\"core\":{\"index\":3,\"extraInfo\":\"{\\\"adUnitMgrAb\\\":\\\"-1\\\",\\\"bidding\\\":\\\"{}\\\",\\\"rankId\\\":\\\"e810b2997b0246d89fa1e3ef50739ffd\\\",\\\"rankType\\\":\\\"8\\\",\\\"adLogo\\\":\\\"{\\\\\\\"url\\\\\\\":\\\\\\\"https://cube.elemecdn.com/0/1d/49b90a483860967ed3c67dd27714epng.png\\\\\\\",\\\\\\\"position\\\\\\\":\\\\\\\"left-bottom\\\\\\\"}\\\",\\\"latitude\\\":\\\"22.547\\\",\\\"rankTime\\\":\\\"1560332601\\\",\\\"cityId\\\":\\\"11\\\",\\\"userId\\\":\\\"0\\\",\\\"longitude\\\":\\\"114.085947\\\"}\",\"target\":{\"restaurantId\":170409626,\"weight\":240,\"probability\":0.04050000011920929},\"come_from\":0,\"next\":{\"restaurantId\":760680,\"weight\":200,\"probability\":0.04633999988436699}}}",
+        "business_info": "{\"recent_order_num_display\": \"月售3855\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"26减25\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"65减50\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"108减72\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"155减92\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"7元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"0元配送\", \"border\": \"4ce23028\", \"background\": null, \"type\": 12, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"2.5元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"领5元红包\", \"border\": \"4ce23028\", \"background\": null, \"type\": 8, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"返红包\", \"border\": \"4ce23028\", \"background\": null, \"type\": 9, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"赠\", \"border\": \"4ce23028\", \"background\": null, \"type\": 10, \"icon\": null}], \"ad_info\": null}",
+        "delivery_fee_discount": 2,
+        "description": "",
+        "distance": 2460,
+        "favored": false,
+        "flavors": [
+          {
+            "id": 221,
+            "name": "川湘菜"
+          }
+        ],
+        "float_delivery_fee": 0,
+        "float_minimum_order_amount": 20,
+        "has_story": false,
+        "id": "E15938357338084459502",
+        "image_path": "e5d45bf983284d3186598885873a5850jpeg",
+        "is_new": false,
+        "is_premium": false,
+        "is_star": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 22.539853,
+        "longitude": 114.101207,
+        "max_applied_quantity_per_order": -1,
+        "name": "蜀湘苑私房菜",
+        "next_business_time": "明天 10:10",
+        "only_use_poi": false,
+        "opening_hours": [
+          "10:10/23:25"
+        ],
+        "order_lead_time": 46,
+        "out_of_range": false,
+        "phone": "15994764741",
+        "piecewise_agent_fee": {
+          "description": "免配送费",
+          "extra_fee": -2,
+          "is_extra": true,
+          "no_subsidy_fee": "¥2",
+          "rules": [
+            {
+              "fee": 0,
+              "price": 20
+            }
+          ],
+          "tips": "免配送费"
+        },
+        "platform": 0,
+        "posters": [],
+        "promotion_info": "蜀湘苑私房菜福田分店开张，价格实惠，品种丰富，欢迎各位新老顾客前来品尝！收餐后有任何不满意请及时联系我们！电话：18127000792。我们将立刻为您处理，谢谢！",
+        "rating": 4.2,
+        "rating_count": 366,
+        "recent_order_num": 3855,
+        "recommend": {
+          "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+          "is_ad": true,
+          "reason": "广告",
+          "track": "{\"rankType\":\"8\"}"
+        },
+        "recommend_reasons": [],
+        "regular_customer_count": 0,
+        "scheme": "https://h5.ele.me/shop/#id=E15938357338084459502",
+        "status": 1,
+        "support_tags": [
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+            "text": "川湘菜",
+            "type": 1
+          },
+          {
+            "border": "4c000000",
+            "color": "99000000",
+            "text": "支持自取",
+            "type": 20
+          },
+          {
+            "border": "dddddd",
+            "color": "333333",
+            "text": "品质联盟"
+          }
+        ],
+        "supports": [
+          {
+            "border": "90dddddd",
+            "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+            "icon_color": "999999",
+            "icon_name": "保",
+            "id": 7,
+            "name": "食安保",
+            "text_color": "666666",
+            "two_characters_icon_name": "保险"
+          }
+        ],
+        "theme": {
+          "default_color": "2395ff",
+          "header_style": 0,
+          "hongbao_style": 0,
+          "price_color": "ff5339",
+          "third_tab_name": "商家",
+          "vanish_fields": []
+        },
+        "type": 0
+      }
+    },
+    {
+      "restaurant": {
+        "act_tag": 0,
+        "activities": [
+          {
+            "attribute": "{\"100\": {\"1\": 58.0, \"0\": 0}, \"30\": {\"1\": 30.0, \"0\": 0}, \"63\": {\"1\": 52.0, \"0\": 0}}",
+            "description": "满30减30，满63减52，满100减58",
+            "icon_color": "f07373",
+            "icon_name": "减",
+            "id": 21763035738,
+            "is_exclusive_with_food_activity": true,
+            "name": "湘聚缘六月满减",
+            "tips": "满30减30，满63减52，满100减58",
+            "type": 102
+          },
+          {
+            "attribute": "17.0",
+            "description": "新用户下单立减17元",
+            "icon_color": "70bc46",
+            "icon_name": "首",
+            "id": 21740403714,
+            "is_exclusive_with_food_activity": true,
+            "name": "新用户立减(不与其他活动共享)",
+            "tips": "新用户下单立减17元",
+            "type": 103
+          },
+          {
+            "description": "特价商品1.99元起",
+            "icon_color": "f1884f",
+            "icon_name": "换",
+            "id": 21678114498,
+            "name": "超值换购",
+            "tips": "超值换购"
+          },
+          {
+            "attribute": "{\"128.0\": {\"quantity\": 1, \"must_pay_online\": 1, \"name\": \"\\u5927\\u74f6\\u53ef\\u4e50\"}}",
+            "description": "满128元赠送大瓶可乐1份",
+            "icon_color": "3cc791",
+            "icon_name": "赠",
+            "id": 21584858706,
+            "is_exclusive_with_food_activity": true,
+            "name": "赠品活动",
+            "tips": "满128元赠送大瓶可乐1份",
+            "type": 106
+          },
+          {
+            "description": "折扣商品4.5折起",
+            "icon_color": "f07373",
+            "icon_name": "折",
+            "id": 21484442706,
+            "name": "单品折扣",
+            "tips": "单品折扣"
+          }
+        ],
+        "address": "深圳市福田区华强北街道上步工业区503栋A01",
+        "authentic_id": 6345092077681480,
+        "bidding": "{\"core\":{\"index\":4,\"extraInfo\":\"{\\\"adUnitMgrAb\\\":\\\"-1\\\",\\\"bidding\\\":\\\"{}\\\",\\\"rankId\\\":\\\"e810b2997b0246d89fa1e3ef50739ffd\\\",\\\"rankType\\\":\\\"8\\\",\\\"adLogo\\\":\\\"{\\\\\\\"url\\\\\\\":\\\\\\\"https://cube.elemecdn.com/0/1d/49b90a483860967ed3c67dd27714epng.png\\\\\\\",\\\\\\\"position\\\\\\\":\\\\\\\"left-bottom\\\\\\\"}\\\",\\\"latitude\\\":\\\"22.547\\\",\\\"rankTime\\\":\\\"1560332601\\\",\\\"cityId\\\":\\\"11\\\",\\\"userId\\\":\\\"0\\\",\\\"longitude\\\":\\\"114.085947\\\"}\",\"target\":{\"restaurantId\":760680,\"weight\":200,\"probability\":0.04633999988436699},\"come_from\":0,\"next\":{\"restaurantId\":170713960,\"weight\":210,\"probability\":0.04382000118494034}}}",
+        "business_info": "{\"recent_order_num_display\": \"月售2991\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"30减30\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"63减52\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"100减58\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"7元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"4.5折\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"1.99元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"赠\", \"border\": \"4ce23028\", \"background\": null, \"type\": 10, \"icon\": null}], \"ad_info\": null}",
+        "delivery_fee_discount": 0,
+        "description": "欢迎光临！",
+        "distance": 256,
+        "favored": false,
+        "flavors": [
+          {
+            "id": 442,
+            "name": "木桶饭"
+          }
+        ],
+        "float_delivery_fee": 2,
+        "float_minimum_order_amount": 20,
+        "has_story": false,
+        "id": "E1645163855687534323",
+        "image_path": "2cfe01550da7dda3aa0256286bc4f24djpeg",
+        "is_new": false,
+        "is_premium": false,
+        "is_star": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 22.547356,
+        "longitude": 114.084203,
+        "max_applied_quantity_per_order": -1,
+        "name": "湘聚缘木桶饭",
+        "next_business_time": "明天 09:00",
+        "only_use_poi": false,
+        "opening_hours": [
+          "09:00/21:30"
+        ],
+        "order_lead_time": 40,
+        "out_of_range": false,
+        "phone": "18126177028 82550017 82550073",
+        "piecewise_agent_fee": {
+          "description": "配送费¥2",
+          "extra_fee": 0,
+          "is_extra": false,
+          "no_subsidy_fee": "",
+          "rules": [
+            {
+              "fee": 2,
+              "price": 20
+            }
+          ],
+          "tips": "配送费¥2"
+        },
+        "platform": 0,
+        "posters": [],
+        "promotion_info": "",
+        "rating": 4.2,
+        "rating_count": 223,
+        "recent_order_num": 2991,
+        "recommend": {
+          "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+          "is_ad": true,
+          "reason": "广告",
+          "track": "{\"rankType\":\"8\"}"
+        },
+        "recommend_reasons": [],
+        "regular_customer_count": 0,
+        "scheme": "https://h5.ele.me/shop/#id=E1645163855687534323",
+        "status": 1,
+        "support_tags": [
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+            "text": "木桶饭",
+            "type": 1
+          },
+          {
+            "border": "4c000000",
+            "color": "99000000",
+            "text": "支持自取",
+            "type": 20
+          }
+        ],
+        "supports": [
+          {
+            "border": "90dddddd",
+            "description": "商家原因导致订单取消，赔付代金券",
+            "icon_color": "999999",
+            "icon_name": "赔",
+            "id": 10,
+            "name": "拒单赔",
+            "text_color": "666666",
+            "two_characters_icon_name": ""
+          },
+          {
+            "border": "90dddddd",
+            "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+            "icon_color": "999999",
+            "icon_name": "保",
+            "id": 7,
+            "name": "食安保",
+            "text_color": "666666",
+            "two_characters_icon_name": "保险"
+          },
+          {
+            "border": "90dddddd",
+            "description": "该商家支持开发票，请在下单时填写好发票抬头",
+            "icon_color": "999999",
+            "icon_name": "票",
+            "id": 4,
+            "name": "开发票",
+            "text_color": "666666",
+            "two_characters_icon_name": "发票"
+          }
+        ],
+        "theme": {
+          "default_color": "2395ff",
+          "header_style": 0,
+          "hongbao_style": 0,
+          "price_color": "ff5339",
+          "third_tab_name": "商家",
+          "vanish_fields": []
+        },
+        "type": 0
+      }
+    },
+    {
+      "restaurant": {
+        "act_tag": 0,
+        "activities": [
+          {
+            "attribute": "{\"49\": {\"1\": 22.0, \"0\": 0}, \"28\": {\"1\": 15.0, \"0\": 0}, \"78\": {\"1\": 25.0, \"0\": 0}}",
+            "description": "满28减15，满49减22，满78减25",
+            "icon_color": "f07373",
+            "icon_name": "减",
+            "id": 21748187706,
+            "is_exclusive_with_food_activity": true,
+            "name": "三米深圳",
+            "tips": "满28减15，满49减22，满78减25",
+            "type": 102
+          },
+          {
+            "attribute": "25.0",
+            "description": "新用户下单立减25元",
+            "icon_color": "70bc46",
+            "icon_name": "首",
+            "id": 21775035834,
+            "is_exclusive_with_food_activity": true,
+            "name": "新用户立减(不与其他活动共享)",
+            "tips": "新用户下单立减25元",
+            "type": 103
+          },
+          {
+            "description": "特价商品0.1元起",
+            "icon_color": "f1884f",
+            "icon_name": "特",
+            "id": 1442614697,
+            "name": "单品定价",
+            "tips": "单品定价"
+          },
+          {
+            "description": "折扣商品3折起",
+            "icon_color": "f07373",
+            "icon_name": "折",
+            "id": 1442620977,
+            "name": "单品折扣",
+            "tips": "单品折扣"
+          }
+        ],
+        "address": "深圳市福田区华强北街道华发北路桑达小区109栋一楼A2号",
+        "authentic_id": 8365032066694561,
+        "business_info": "{\"recent_order_num_display\": \"月售7224\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"28减15\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"49减22\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"78减25\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"0元配送\", \"border\": \"4ce23028\", \"background\": null, \"type\": 12, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减25\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"3折\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"0.1元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"返红包\", \"border\": \"4ce23028\", \"background\": null, \"type\": 9, \"icon\": null}], \"ad_info\": null}",
+        "delivery_fee_discount": 3,
+        "description": "亲爱的小主，我们将尽一切可能给您提供最优惠的价格，最优质的服务，三米粥铺致力于做好一碗充满性价比的粥，您有任何建议都可以联系我们 ，如果有漏送或送错等情况，我们会用好的服务替您解决！",
+        "distance": 755,
+        "favored": false,
+        "flavors": [
+          {
+            "id": 778,
+            "name": "粥店"
+          },
+          {
+            "id": 882,
+            "name": "其他快餐"
+          }
+        ],
+        "float_delivery_fee": 0,
+        "float_minimum_order_amount": 20,
+        "folding_restaurant_brand": "三米粥铺",
+        "folding_restaurants": [
+          {
+            "distance": 2049,
+            "id": "E15302661702108978282",
+            "name": "三米粥铺(深圳南园街道店)",
+            "order_lead_time": 38,
+            "scheme": "https://h5.ele.me/shop/#id=E15302661702108978282",
+            "type": 0
+          },
+          {
+            "distance": 4905,
+            "id": "E13017456788125371259",
+            "name": "三米粥铺(深圳福田街道店)",
+            "order_lead_time": 45,
+            "scheme": "https://h5.ele.me/shop/#id=E13017456788125371259",
+            "type": 0
+          }
+        ],
+        "has_story": false,
+        "id": "E313038324678379850",
+        "image_path": "db11b69b8cf603743b02d9a84d6f4d42png",
+        "is_new": false,
+        "is_premium": true,
+        "is_star": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 22.543647,
+        "longitude": 114.089743,
+        "max_applied_quantity_per_order": -1,
+        "name": "三米粥铺(深圳华强北店)",
+        "next_business_time": "明天 00:00",
+        "only_use_poi": false,
+        "opening_hours": [
+          "00:00/24:00"
+        ],
+        "order_lead_time": 40,
+        "out_of_range": false,
+        "phone": "18025402649 18049959886 13817853005",
+        "piecewise_agent_fee": {
+          "description": "免配送费",
+          "extra_fee": -3,
+          "is_extra": true,
+          "no_subsidy_fee": "¥3",
+          "rules": [
+            {
+              "fee": 0,
+              "price": 20
+            }
+          ],
+          "tips": "免配送费"
+        },
+        "platform": 0,
+        "posters": [],
+        "promotion_info": "三米粥铺新店开业，三米为了让大家吃得好好的，有一大波满减优惠活动等着大家。如餐品上有任何质量问题，请务必提前联系我们后再做评论，我们会给大家满意的解决方案。请致电：",
+        "rating": 4.6,
+        "rating_count": 1643,
+        "recent_order_num": 7224,
+        "recommend": {
+          "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+          "is_ad": false,
+          "track": "{\"rankType\":\"3\"}"
+        },
+        "recommend_reasons": [
+          {
+            "name": "味道超赞"
+          }
+        ],
+        "regular_customer_count": 0,
+        "scheme": "https://h5.ele.me/shop/#id=E313038324678379850",
+        "status": 1,
+        "support_tags": [
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+            "text": "粥店",
+            "type": 1
+          },
+          {
+            "border": "4c000000",
+            "color": "99000000",
+            "text": "支持自取",
+            "type": 20
+          },
+          {
+            "border": "dddddd",
+            "color": "333333",
+            "text": "品质联盟"
+          }
+        ],
+        "supports": [
+          {
+            "border": "90dddddd",
+            "description": "商家原因导致订单取消，赔付代金券",
+            "icon_color": "999999",
+            "icon_name": "赔",
+            "id": 10,
+            "name": "拒单赔",
+            "text_color": "666666",
+            "two_characters_icon_name": ""
+          },
+          {
+            "border": "90dddddd",
+            "description": "该商户食品安全已由国泰产险承担，食品安全有保障",
+            "icon_color": "999999",
+            "icon_name": "保",
+            "id": 7,
+            "name": "食安保",
+            "text_color": "666666",
+            "two_characters_icon_name": "保险"
+          },
+          {
+            "border": "90dddddd",
+            "description": "该商家支持开发票，请在下单时填写好发票抬头",
+            "icon_color": "999999",
+            "icon_name": "票",
+            "id": 4,
+            "name": "开发票",
+            "text_color": "666666",
+            "two_characters_icon_name": "发票"
+          }
+        ],
+        "tags": [],
+        "target_tag_path": "d53fc0cb4dc67973038cbc591938a1b6png",
+        "theme": {
+          "default_color": "2395ff",
+          "header_style": 0,
+          "hongbao_style": 0,
+          "price_color": "ff5339",
+          "third_tab_name": "商家",
+          "vanish_fields": []
+        },
+        "type": 0
+      }
+    },
+    {
+      "restaurant": {
+        "act_tag": 0,
+        "activities": [
+          {
+            "attribute": "{\"120\": {\"1\": 50.0, \"0\": 0}, \"99\": {\"1\": 40.0, \"0\": 0}, \"60\": {\"1\": 20.0, \"0\": 0}, \"6\": {\"1\": 5.0, \"0\": 0}}",
+            "description": "满6减5，满60减20，满99减40，满120减50",
+            "icon_color": "f07373",
+            "icon_name": "减",
+            "id": 21766686802,
+            "is_exclusive_with_food_activity": true,
+            "name": "10-16A1",
+            "tips": "满6减5，满60减20，满99减40，满120减50",
+            "type": 102
+          },
+          {
+            "description": "特价商品9.9元起",
+            "icon_color": "f1884f",
+            "icon_name": "换",
+            "id": 21761665578,
+            "name": "超值换购",
+            "tips": "超值换购"
+          },
+          {
+            "attribute": "17.0",
+            "description": "新用户下单立减17元",
+            "icon_color": "70bc46",
+            "icon_name": "首",
+            "id": 21760531210,
+            "is_exclusive_with_food_activity": true,
+            "name": "新用户立减(不与其他活动共享)",
+            "tips": "新用户下单立减17元",
+            "type": 103
+          }
+        ],
+        "address": "深圳市福田区深南中路北方大厦1-2层",
+        "authentic_id": 7395012065628187,
+        "business_info": "{\"recent_order_num_display\": \"月售720\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"6减5\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"60减20\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"99减40\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"120减50\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"9.9元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}], \"ad_info\": null}",
+        "delivery_fee_discount": 0,
+        "description": "必胜客 欢迎光临",
+        "distance": 1079,
+        "favored": false,
+        "flavors": [
+          {
+            "id": 1042,
+            "name": "披萨"
+          },
+          {
+            "id": 212,
+            "name": "汉堡薯条"
+          }
+        ],
+        "float_delivery_fee": 5,
+        "float_minimum_order_amount": 0,
+        "folding_restaurant_brand": "必胜客",
+        "folding_restaurants": [
+          {
+            "distance": 1081,
+            "id": "E12671802573649555738",
+            "name": "必胜客宅急送（华强东店）",
+            "order_lead_time": 40,
+            "scheme": "https://h5.ele.me/shop/#id=E12671802573649555738",
+            "type": 0
+          }
+        ],
+        "has_story": false,
+        "id": "E16224731640476521455",
+        "image_path": "3be145a1509014a5160f193517ee06dbjpeg",
+        "is_new": false,
+        "is_premium": true,
+        "is_star": true,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 22.540117,
+        "longitude": 114.085019,
+        "max_applied_quantity_per_order": -1,
+        "name": "必胜客宅急送（北方大厦店）",
+        "next_business_time": "明天 10:30",
+        "only_use_poi": false,
+        "opening_hours": [
+          "10:30/22:00"
+        ],
+        "order_lead_time": 40,
+        "out_of_range": false,
+        "phone": "4009208809",
+        "piecewise_agent_fee": {
+          "description": "配送费¥5",
+          "extra_fee": 0,
+          "is_extra": false,
+          "no_subsidy_fee": "",
+          "rules": [
+            {
+              "fee": 5,
+              "price": 0
+            }
+          ],
+          "tips": "配送费¥5"
+        },
+        "platform": 0,
+        "posters": [],
+        "promotion_info": "配送费现从9元优惠至5元，该优惠将在小票的本单优惠金额中立减。如果需要Fapiao，请在订单中备Fapiao，我们将为您提供电子Fapiao提取码。比萨尺寸为英寸，指烤盘盘底的直径，仅供参考，实际规格请以克重为准。用餐高峰时间可能会延迟送餐时间，请以实际送餐时间为准。",
+        "rating": 4.6,
+        "rating_count": 204,
+        "recent_order_num": 720,
+        "recommend": {
+          "color": "#e8470b",
+          "image_hash": "",
+          "is_ad": false,
+          "reason": "",
+          "track": "{\"rankType\":\"3\"}"
+        },
+        "recommend_reasons": [],
+        "regular_customer_count": 0,
+        "scheme": "https://h5.ele.me/shop/#id=E16224731640476521455",
+        "status": 1,
+        "support_tags": [
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+            "text": "披萨",
+            "type": 1
+          },
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "text": "口碑人气好店"
+          }
+        ],
+        "supports": [
+          {
+            "border": "90dddddd",
+            "description": "商家原因导致订单取消，赔付代金券",
+            "icon_color": "999999",
+            "icon_name": "赔",
+            "id": 10,
+            "name": "拒单赔",
+            "text_color": "666666",
+            "two_characters_icon_name": ""
+          },
+          {
+            "border": "90dddddd",
+            "description": "该商家支持开发票，请在下单时填写好发票抬头",
+            "icon_color": "999999",
+            "icon_name": "票",
+            "id": 4,
+            "name": "开发票",
+            "text_color": "666666",
+            "two_characters_icon_name": "发票"
+          }
+        ],
+        "tags": [],
+        "target_tag_path": "d6a7283753e66cad4c4dc9a459d96a7fpng",
+        "theme": {
+          "default_color": "2395ff",
+          "header_style": 0,
+          "hongbao_style": 0,
+          "price_color": "ff5339",
+          "third_tab_name": "商家",
+          "vanish_fields": []
+        },
+        "type": 0
+      }
+    },
+    {
+      "restaurant": {
+        "act_tag": 0,
+        "activities": [
+          {
+            "attribute": "{\"10\": {\"1\": 7.0, \"0\": 0}, \"199\": {\"1\": 80.0, \"0\": 0}, \"34\": {\"1\": 14.0, \"0\": 0}, \"46\": {\"1\": 19.0, \"0\": 0}, \"79\": {\"1\": 30.0, \"0\": 0}}",
+            "description": "满10减7，满34减14，满46减19，满79减30，满199减80",
+            "icon_color": "f07373",
+            "icon_name": "减",
+            "id": 21745664378,
+            "is_exclusive_with_food_activity": true,
+            "name": "满减",
+            "tips": "满10减7，满34减14，满46减19，满79减30，满199减80",
+            "type": 102
+          },
+          {
+            "attribute": "{\"1.0\": {\"quantity\": 2, \"must_pay_online\": 1, \"name\": \"\\u5fb7\\u8299\\u5de7\\u514b\\u529b\\uff08\\u53e3\\u5473\\u968f\\u673a\\uff09\"}}",
+            "description": "满1元赠送德芙巧克力（口味随机）2份",
+            "icon_color": "3cc791",
+            "icon_name": "赠",
+            "id": 21765623435,
+            "is_exclusive_with_food_activity": true,
+            "name": "赠品活动",
+            "tips": "满1元赠送德芙巧克力（口味随机）2份",
+            "type": 106
+          },
+          {
+            "attribute": "17.0",
+            "description": "新用户下单立减17元",
+            "icon_color": "70bc46",
+            "icon_name": "首",
+            "id": 21737045658,
+            "is_exclusive_with_food_activity": true,
+            "name": "新用户立减(不与其他活动共享)",
+            "tips": "新用户下单立减17元",
+            "type": 103
+          },
+          {
+            "description": "折扣商品5折起",
+            "icon_color": "f07373",
+            "icon_name": "折",
+            "id": 21743223979,
+            "name": "单品折扣",
+            "tips": "单品折扣"
+          },
+          {
+            "description": "特价商品1元起",
+            "icon_color": "f1884f",
+            "icon_name": "换",
+            "id": 21632819578,
+            "name": "超值换购",
+            "tips": "超值换购"
+          }
+        ],
+        "address": "深圳市福田区华强北街道兰天路10号10号商铺",
+        "authentic_id": 5365092054697740,
+        "business_info": "{\"recent_order_num_display\": \"月售321\", \"lemon_support_tags\": [{\"color\": \"cce23028\", \"text\": \"10减7\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"34减14\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"46减19\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"79减30\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"199减80\", \"border\": \"4ce23028\", \"background\": null, \"type\": 1, \"icon\": null}, {\"color\": \"a25c03\", \"text\": \"8元会员红包\", \"border\": \"4ca25c03\", \"background\": null, \"type\": 2, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"品质联盟\", \"border\": \"4ce23028\", \"background\": null, \"type\": 4, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"首单减17\", \"border\": \"4ce23028\", \"background\": null, \"type\": 5, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"5折\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"1元特价\", \"border\": \"4ce23028\", \"background\": null, \"type\": 7, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"领12元红包\", \"border\": \"4ce23028\", \"background\": null, \"type\": 8, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"返红包\", \"border\": \"4ce23028\", \"background\": null, \"type\": 9, \"icon\": null}, {\"color\": \"cce23028\", \"text\": \"赠\", \"border\": \"4ce23028\", \"background\": null, \"type\": 10, \"icon\": null}], \"ad_info\": null}",
+        "delivery_fee_discount": 2.1,
+        "delivery_mode": {
+          "border": "",
+          "color": "2395FF",
+          "gradient": {
+            "rgb_from": "00AAFF",
+            "rgb_to": "0085FF"
+          },
+          "icon_hash": "b9b45d2f6ff0dbeef3a78ef0e4e90abapng",
+          "id": 1,
+          "is_solid": true,
+          "text": "蜂鸟专送",
+          "text_color": "FFFFFF"
+        },
+        "description": "",
+        "distance": 1107,
+        "favored": false,
+        "flavors": [
+          {
+            "id": 882,
+            "name": "其他快餐"
+          },
+          {
+            "id": 978,
+            "name": "其他小吃"
+          }
+        ],
+        "float_delivery_fee": 1.9,
+        "float_minimum_order_amount": 20,
+        "folding_restaurant_brand": "真蒸日膳",
+        "folding_restaurants": [
+          {
+            "distance": 3055,
+            "id": "E8493335309397431336",
+            "name": "真蒸日膳(深药大厦店)",
+            "order_lead_time": 39,
+            "scheme": "https://h5.ele.me/shop/#id=E8493335309397431336",
+            "type": 0
+          }
+        ],
+        "has_story": false,
+        "id": "E9854769930423374139",
+        "image_path": "73c6d51ebfe422782d2f31efea77061apng",
+        "is_new": false,
+        "is_premium": false,
+        "is_star": false,
+        "is_stock_empty": 0,
+        "is_valid": 1,
+        "latitude": 22.545748,
+        "longitude": 114.093533,
+        "max_applied_quantity_per_order": -1,
+        "name": "真蒸日膳(未来餐厅兰天路店)",
+        "next_business_time": "明天 09:30",
+        "only_use_poi": false,
+        "opening_hours": [
+          "09:30/20:30"
+        ],
+        "order_lead_time": 40,
+        "out_of_range": false,
+        "phone": "13266520975 02160782942",
+        "piecewise_agent_fee": {
+          "description": "配送费¥1.9",
+          "extra_fee": -2.1,
+          "is_extra": true,
+          "no_subsidy_fee": "¥4",
+          "rules": [
+            {
+              "fee": 1.9,
+              "price": 20
+            }
+          ],
+          "tips": "配送费¥1.9"
+        },
+        "platform": 0,
+        "posters": [],
+        "promotion_info": "为您带来家里的味道，像妈妈般细心为你烹饪美食，像妈妈般关心的生活，期待你的生活蒸蒸日上。挑选几个爱吃的菜品，和朋友边吃边聊，让日子有滋有味。",
+        "rating": 4.4,
+        "rating_count": 52,
+        "recent_order_num": 321,
+        "recommend": {
+          "image_hash": "731111f3f9379e772eedf4855beae8a1jpeg",
+          "is_ad": false,
+          "track": "{\"rankType\":\"5\"}"
+        },
+        "recommend_reasons": [],
+        "regular_customer_count": 0,
+        "scheme": "https://h5.ele.me/shop/#id=E9854769930423374139",
+        "status": 1,
+        "support_tags": [
+          {
+            "border": "dddddd",
+            "color": "666666",
+            "icon": "4e20966ca2a516de3f02fb9c7fd1bc6dpng",
+            "text": "其他快餐",
+            "type": 1
+          },
+          {
+            "border": "dddddd",
+            "color": "333333",
+            "text": "品质联盟"
+          }
+        ],
+        "supports": [
+          {
+            "border": "90dddddd",
+            "description": "该商家支持开发票，请在下单时填写好发票抬头",
+            "icon_color": "999999",
+            "icon_name": "票",
+            "id": 4,
+            "name": "开发票",
+            "text_color": "666666",
+            "two_characters_icon_name": "发票"
+          }
+        ],
+        "tags": [],
+        "theme": {
+          "default_color": "2395ff",
+          "header_style": 0,
+          "hongbao_style": 0,
+          "price_color": "ff5339",
+          "third_tab_name": "商家",
+          "vanish_fields": []
+        },
+        "type": 0
+      }
+    }
+  ],
+  "meta": {
+    "rank_id": "e810b2997b0246d89fa1e3ef50739ffd"
+  }
+}

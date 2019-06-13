@@ -177,7 +177,7 @@ export default {
             giftTitle: '限时优惠'
           },
         ],
-        Par: []
+        Par: ''
       }
     },
 
@@ -191,7 +191,10 @@ export default {
   methods: {
     ...mapActions('discover', [
       'GetPartsList'
-    ])
+    ]),
+    newPicImg(){
+      return this.Par[0].main_pic_hash
+    }
   },
 
   components: {
@@ -199,13 +202,25 @@ export default {
     ActivityRecommend,
     ActivityBody
   },
-
+// block_index: 1
+// content_url: "https://h5.ele.me/exchange/"
+// id: (...)
+// main_pic_hash: "8389c9aea0e856149083d84af3444b78jpeg"
+// sub_pic_hash: ""
+// subtitle: "0元好物在这里"
+// title: "金币商城"
+// title_color: "#ff9900"
+// ubt_stats_id: 0
+// https://fuss10.elemecdn.com/8/38/9c9aea0e856149083d84af3444b78jpeg.jpeg?imageMogr/format/webp/
   watch: {
-      partsList : (newVal, oldVal) =>{
-        var Parts = newVal[1];
-        for(var i = 0;i < parts.length;i++){
-          this.Par[i] = Parts[i];
-        }
+      partsList (newVal, oldVal){
+        this.Par = newVal[1];
+        // for(var i = 0;i < parts.length;i++){
+        //   this.Par[i] = Parts[i];
+        // }
+        
+        var arr = this.newPicImg()
+        console.log(arr)
       }
   },
 
@@ -214,7 +229,7 @@ export default {
   },
   mounted () {
     this.GetPartsList();
-    console.log(this.$store.state.discover.partsList);
+    // console.log(this.$store.state.discover.partsList);
   }
 }
 </script>
