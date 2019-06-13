@@ -3,24 +3,50 @@
     <router-link
       v-for="(item) in partsItem"
       :key="item.id"
-      :class="item.linkC"
-      :to="item.to"
+      to="/items"
       class="parts-left"
       >
       <div class="parts-left-box">
         <h2 class="parts-left-title">{{ item.title }}</h2>
-        <p class="parts-left-titles">{{ item.titles }}</p>
+        <p class="parts-left-titles">{{ item.subtitle }}</p>
       </div>
       <img
         class="parts-left-img"
-        :src="item.leftImgSrc" >
+        :src="item.main_pic_hash | getPartsImg" >
     </router-link>
   </section>
 </template>
 <script>
+import { mapGetters, mapActions, mapState } from 'vuex';
 export default {
   props:{
     partsItem: Array
+  },
+  //https://fuss10.elemecdn.com/8/38/9c9aea0e856149083d84af3444b78jpeg.jpeg?imageMogr/format/webp/
+  methods: {
+    ...mapGetters('discover',['HashImg']),
+    // setHashImg(value){
+    //   this.$store.commit('discover/GETHASHIMG', value);
+    //   src = '.jpeg?imageMogr/format/webp/'
+    //   this.$store.commit('discover/SETIMGURL', src);
+
+    // }
+  },
+  filters: {
+    getPartsImg (value) {
+      let newPartsImg = ''
+      let PartsImgs = value.split('')
+      PartsImgs.splice(1,0,'/')
+      PartsImgs.splice(4,0,'/')
+      PartsImgs = PartsImgs.join('')
+      newPartsImg = `https://fuss10.elemecdn.com/${PartsImgs}.jpeg?imageMogr/format/webp/`
+      return newPartsImg
+      // this.$store.commit('discover/GETHASHIMG', value);
+      // src = '.jpeg?imageMogr/format/webp/'
+      // this.$store.commit('discover/SETIMGURL', src);
+
+      // return HashImg
+    }
   }
 }
 </script>
@@ -38,6 +64,30 @@ export default {
     height: 160px;
     // background-color: #fff;
     position: relative;
+    & a:nth-child(1){
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background: #ededed;
+        transform: scaleX(.5);
+      }
+    }
+    & a:nth-child(2){
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 1px;
+        background: #e7e3e3;
+        transform: scaleY(.5);
+      }
+    }
+
     .parts-left{
       width: 187px;
       height: 100%;

@@ -26,7 +26,7 @@
         <span class=" activity-spanb"></span>
       </div>
       <p class="activity-msg">金币换好礼</p>
-      <ActivityBody :exchangeItem=" exchangeItem"/>
+      <ActivityBody :exchangeItem="exchangeItems"/>
       <p class="activity-footer">
         查看更多<i class="el-icon-arrow-right"></i>
       </p>
@@ -48,45 +48,6 @@ import { mapActions, mapState } from 'vuex'
 export default {
     data () {
       return {
-        partsItems:
-        [
-          {
-            id: '1',
-            title: '金币商城',
-            titles: '0元好物在这里',
-            to: {path: './jinbi'},
-            linkC: ['border-right'],
-            // leftBox: ['parts-left-box'],
-            // leftTitle: ['parts-left-title'],
-            // leftTitles: ['parts-left-titles'],
-            // leftImg: ['parts-left-img'],
-            leftImgSrc: 'https://fuss10.elemecdn.com/8/38/9c9aea0e856149083d84af3444b78jpeg.jpeg?imageMogr/format/webp/'
-          },
-          {
-            id: '2',
-            title: '推荐有奖',
-            titles: '20元现金拿不停',
-            to: {path: './tuijian'},
-            linkC: ['border-bottoms'],
-            // leftBox: ['parts-left-box'],
-            // leftTitle: ['parts-left-title'],
-            // leftTitles: ['parts-left-titles'],
-            // leftImg: ['parts-left-img'],
-            leftImgSrc: 'https://fuss10.elemecdn.com/5/72/7232274c3c1934861abb86ba32b7bjpeg.jpeg?imageMogr/format/webp/'
-          },
-          {
-            id: '3',
-            title: '周边优惠',
-            titles: '领取口碑好券',
-            to: {path: './zhoubian'},
-            // linkC: ['parts-left'],
-            // leftBox: ['parts-left-box'],
-            // leftTitle: ['parts-left-title'],
-            // leftTitles: ['parts-left-titles'],
-            // leftImg: ['parts-left-img'],
-            leftImgSrc: 'https://fuss10.elemecdn.com/5/10/2351e989d4171479ba0d7b5c06053jpeg.jpeg?imageMogr/format/webp/'
-          }
-        ],
         activityItem:
         [
           {
@@ -177,20 +138,27 @@ export default {
             giftTitle: '限时优惠'
           },
         ],
-        Par: []
+        partsItems: null,
+        // 401拿不到
+        activityItems: null,
+        exchangeItems: null
       }
     },
 
   computed: {
     ...mapState('discover', [
-      'partsList'
+      'partsList',
+      'activitylist',
+      'exchangeList'
     ]),
 
   },
 
   methods: {
     ...mapActions('discover', [
-      'GetPartsList'
+      'GetPartsList',
+      'GetRecommendList',
+      'GetBodyList'
     ])
   },
 
@@ -201,20 +169,23 @@ export default {
   },
 
   watch: {
-      partsList : (newVal, oldVal) =>{
-        var Parts = newVal[1];
-        for(var i = 0;i < parts.length;i++){
-          this.Par[i] = Parts[i];
-        }
+      partsList (newVal, oldVal){
+        this.partsItems = newVal[1];
+      },
+      activitylist (newVal, oldVal){
+        this.activityItems = newVal
+      },
+      exchangeList (newVal, oldVal){
+        this.exchangeItems = newVal
       }
   },
 
   creared () {
-
   },
   mounted () {
     this.GetPartsList();
-    console.log(this.$store.state.discover.partsList);
+    this.GetRecommendList();
+    this.GetBodyList();
   }
 }
 </script>
@@ -430,3 +401,42 @@ export default {
   }
 }
 </style>
+    // partsItemss:
+    //     [
+    //       {
+    //         id: '1',
+    //         title: '金币商城',
+    //         titles: '0元好物在这里',
+    //         to: {path: './jinbi'},
+    //         linkC: ['border-right'],
+    //         // leftBox: ['parts-left-box'],
+    //         // leftTitle: ['parts-left-title'],
+    //         // leftTitles: ['parts-left-titles'],
+    //         // leftImg: ['parts-left-img'],
+    //         leftImgSrc: 'https://fuss10.elemecdn.com/8/38/9c9aea0e856149083d84af3444b78jpeg.jpeg?imageMogr/format/webp/'
+    //       },
+    //       {
+    //         id: '2',
+    //         title: '推荐有奖',
+    //         titles: '20元现金拿不停',
+    //         to: {path: './tuijian'},
+    //         linkC: ['border-bottoms'],
+    //         // leftBox: ['parts-left-box'],
+    //         // leftTitle: ['parts-left-title'],
+    //         // leftTitles: ['parts-left-titles'],
+    //         // leftImg: ['parts-left-img'],
+    //         leftImgSrc: 'https://fuss10.elemecdn.com/5/72/7232274c3c1934861abb86ba32b7bjpeg.jpeg?imageMogr/format/webp/'
+    //       },
+    //       {
+    //         id: '3',
+    //         title: '周边优惠',
+    //         titles: '领取口碑好券',
+    //         to: {path: './zhoubian'},
+    //         // linkC: ['parts-left'],
+    //         // leftBox: ['parts-left-box'],
+    //         // leftTitle: ['parts-left-title'],
+    //         // leftTitles: ['parts-left-titles'],
+    //         // leftImg: ['parts-left-img'],
+    //         leftImgSrc: 'https://fuss10.elemecdn.com/5/10/2351e989d4171479ba0d7b5c06053jpeg.jpeg?imageMogr/format/webp/'
+    //       }
+    //     ],
