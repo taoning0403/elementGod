@@ -66,6 +66,11 @@ export default new Router({
       path: '/checkout/address',
       name: 'address',
       component: () => import('../views/checkout/address.vue')
+    },
+    {
+      path: '/checkout/notes',
+      name: 'notes',
+      component: () => import('../views/checkout/notes.vue')
     }
   ]
 })

@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     onSave() {
-      window.location.href = 'http://localhost:8082/#/checkout/checkout'
+      window.location.href = 'http://localhost:8080/#/checkout/checkout'
     },
 
   }

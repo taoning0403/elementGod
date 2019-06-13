@@ -1,24 +1,24 @@
 <template>
   <van-swipe indicator-color="white" class="swiper">
     <van-swipe-item>
-      <ul class="swiper-item">
+      <!-- <ul class="swiper-item">
         <li
           v-for="img in imgList[0].entries.slice(0, 10)"
           :key="img.id"
         >
-        <!-- <img :src="" alt=""> -->
+         <img :src="" alt="">
         {{ img.name }}
         </li>
-      </ul>
+      </ul> -->
       <!-- {{ imgList[0].entries[0].name }} -->
     </van-swipe-item>
     <van-swipe-item>
-      <ul class="swiper-item">
+      <!-- <ul class="swiper-item">
         <li
           v-for="img in imgList[0].entries"
           :key="img.id"
         >{{ img.image_hash }}</li>
-      </ul>
+      </ul> -->
     </van-swipe-item>
   </van-swipe>
 </template>
@@ -45,7 +45,7 @@ export default {
 
   filters: {
     getList (value) {
-      return 
+      return
     }
   }
 }
