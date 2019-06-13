@@ -3,7 +3,7 @@
     <div></div>
     <!-- 头部 -->
     <PartsItem :partsItem="partsItems"/>
-    <!-- 中部 登陆过后缓存的
+    <!-- 中部 登陆过后缓存的 -->
     <section class="discover-main">
       <div class="activity-header">
         <span class=" activity-spana"></span>
@@ -16,18 +16,18 @@
       <p class="activity-footer">
         查看更多<i class="el-icon-arrow-right"></i>
       </p>
-    </section>-->
+    </section>
     <!-- 下部分 -->
     <section class="discover-bottom">
       <div class="activity-header">
-        <span class=" activity-spana"></span>
+        <span class="activity-spana"></span>
         <i class="el-icon-time " ></i>
         <strong class="activity-title">限时好礼</strong>
         <span class=" activity-spanb"></span>
       </div>
       <p class="activity-msg">金币换好礼</p>
-      <ActivityBody :exchangeItem="exchangeItems"/>
-      <p class="activity-footer">
+      <ActivityBody :exchangeItem="ActItem"/>
+      <p class="activity-footer" @click="fn">
         查看更多<i class="el-icon-arrow-right"></i>
       </p>
 
@@ -111,37 +111,11 @@ export default {
             shopName: ' 熊猫记    (固戍店)'
           },
         ],
-        exchangeItem:
-        [
-          {
-            id: 1,name:'',
-            giftImg: 'https://fuss10.elemecdn.com/7/ec/adf8ae0fd52a0eb56f4332fb61ac2jpeg.jpeg?imageMogr/format/webp/',
-            giftSubtitle: '3元品质联盟红包',
-            prices: '30金币',
-            pricesOnsale: '￥3',
-            giftTitle: '限时优惠'
-          },
-          {
-            id: 2,name:'',
-            giftImg: 'https://fuss10.elemecdn.com/e/b5/605a11eae79849240113271dd1b94jpeg.jpeg?imageMogr/format/webp/',
-            giftSubtitle: '3元品质联盟红包',
-            prices: '30金币',
-            pricesOnsale: '￥3',
-            giftTitle: '限时优惠'
-          },
-          {
-            id: 3,name:'',
-            giftImg: 'https://fuss10.elemecdn.com/7/ad/f0132ee0fee6c57253ada4573364ejpeg.jpeg?imageMogr/format/webp/',
-            giftSubtitle: '3元品质联盟红包',
-            prices: '30金币',
-            pricesOnsale: '￥3',
-            giftTitle: '限时优惠'
-          },
-        ],
         partsItems: null,
         // 401拿不到
         activityItems: null,
-        exchangeItems: null
+        ActItem: null,
+        isJz: true
       }
     },
 
@@ -159,7 +133,16 @@ export default {
       'GetPartsList',
       'GetRecommendList',
       'GetBodyList'
-    ])
+    ]),
+
+    fn(){
+        if(this.ActItem.length < 6){
+          this.ActItem = this.exchangeList;
+          this.isJz = false
+        }else{
+          this.ActItem = this.exchangeList.slice(0,3);
+        }
+    }
   },
 
   components: {
@@ -170,13 +153,14 @@ export default {
 
   watch: {
       partsList (newVal, oldVal){
+
         this.partsItems = newVal[1];
       },
       activitylist (newVal, oldVal){
         this.activityItems = newVal
       },
       exchangeList (newVal, oldVal){
-        this.exchangeItems = newVal
+        this.ActItem = newVal.slice(0,3)
       }
   },
 
@@ -440,3 +424,31 @@ export default {
     //         leftImgSrc: 'https://fuss10.elemecdn.com/5/10/2351e989d4171479ba0d7b5c06053jpeg.jpeg?imageMogr/format/webp/'
     //       }
     //     ],
+
+// exchangeItem:
+//         [
+//           {
+//             id: 1,name:'',
+//             giftImg: 'https://fuss10.elemecdn.com/7/ec/adf8ae0fd52a0eb56f4332fb61ac2jpeg.jpeg?imageMogr/format/webp/',
+//             giftSubtitle: '3元品质联盟红包',
+//             prices: '30金币',
+//             pricesOnsale: '￥3',
+//             giftTitle: '限时优惠'
+//           },
+//           {
+//             id: 2,name:'',
+//             giftImg: 'https://fuss10.elemecdn.com/e/b5/605a11eae79849240113271dd1b94jpeg.jpeg?imageMogr/format/webp/',
+//             giftSubtitle: '3元品质联盟红包',
+//             prices: '30金币',
+//             pricesOnsale: '￥3',
+//             giftTitle: '限时优惠'
+//           },
+//           {
+//             id: 3,name:'',
+//             giftImg: 'https://fuss10.elemecdn.com/7/ad/f0132ee0fee6c57253ada4573364ejpeg.jpeg?imageMogr/format/webp/',
+//             giftSubtitle: '3元品质联盟红包',
+//             prices: '30金币',
+//             pricesOnsale: '￥3',
+//             giftTitle: '限时优惠'
+//           },
+//         ],

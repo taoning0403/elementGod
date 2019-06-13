@@ -10,6 +10,7 @@
         <h2 class="parts-left-title">{{ item.title }}</h2>
         <p class="parts-left-titles">{{ item.subtitle }}</p>
       </div>
+      <!--  setHashImg(item.main_pic_hash)-->
       <img
         class="parts-left-img"
         :src="item.main_pic_hash | getPartsImg" >
@@ -17,20 +18,25 @@
   </section>
 </template>
 <script>
-import { mapGetters, mapActions, mapState } from 'vuex';
+import { mapGetters, mapActions, mapState, mapMutations } from 'vuex';
 export default {
   props:{
     partsItem: Array
   },
-  //https://fuss10.elemecdn.com/8/38/9c9aea0e856149083d84af3444b78jpeg.jpeg?imageMogr/format/webp/
+  // 8389c9aea0e856149083d84af3444b78jpeg
+  // https://fuss10.elemecdn.com/8/38/9c9aea0e856149083d84af3444b78jpeg.jpeg?imageMogr/format/webp/
   methods: {
     ...mapGetters('discover',['HashImg']),
+    ...mapMutations('discover',['HashImgs']),
+
     // setHashImg(value){
     //   this.$store.commit('discover/GETHASHIMG', value);
-    //   src = '.jpeg?imageMogr/format/webp/'
+    //   var src = '.jpeg?imageMogr/format/webp/'
     //   this.$store.commit('discover/SETIMGURL', src);
 
+    //   this.HashImgs
     // }
+
   },
   filters: {
     getPartsImg (value) {
@@ -41,12 +47,17 @@ export default {
       PartsImgs = PartsImgs.join('')
       newPartsImg = `https://fuss10.elemecdn.com/${PartsImgs}.jpeg?imageMogr/format/webp/`
       return newPartsImg
+
       // this.$store.commit('discover/GETHASHIMG', value);
       // src = '.jpeg?imageMogr/format/webp/'
       // this.$store.commit('discover/SETIMGURL', src);
 
-      // return HashImg
+      // return this.HashImg
     }
+  },
+  created() {
+    var src = '.jpeg?imageMogr/format/webp/'
+    this.$store.commit('discover/SETIMGURL', src);
   }
 }
 </script>

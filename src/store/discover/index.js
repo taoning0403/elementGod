@@ -12,8 +12,8 @@ export default {
     activitylist: {},
     // 底部数据
     exchangeList: {},
-    hashimg: '8389c9aea0e856149083d84af3444b78jpeg',
-    imgurl: 'jpeg?imageMogr/format/webp/'
+    hashimg: '',
+    imgurl: ''
   },
 
   mutations: {
@@ -34,6 +34,15 @@ export default {
     SETIMGURL (state, imgurl) {
       state.imgurl = imgurl
     }
+    // HashImgs (state) {
+    //   let newPartsImg = ''
+    //   let PartsImgs = state.hashimg.split('')
+    //   PartsImgs.splice(1, 0, '/')
+    //   PartsImgs.splice(4, 0, '/')
+    //   PartsImgs = PartsImgs.join('')
+    //   newPartsImg = `https://fuss10.elemecdn.com/${PartsImgs}&${state.imgurl}`
+    //   return newPartsImg
+    // }
   },
 
   actions: {
@@ -58,14 +67,14 @@ export default {
   },
 
   getters: {
-    HashImg (state) {
-      let newPartsImg = ''
-      let PartsImgs = state.hashimg.split('')
-      PartsImgs.splice(1, 0, '/')
-      PartsImgs.splice(4, 0, '/')
-      PartsImgs = PartsImgs.join('')
-      newPartsImg = `https://fuss10.elemecdn.com/${PartsImgs}${state.imgurl}`
-      return newPartsImg
-    }
+    // HashImg (state) {
+    //   let newPartsImg = ''
+    //   let PartsImgs = state.hashimg.split('')
+    //   PartsImgs.splice(1, 0, '/')
+    //   PartsImgs.splice(4, 0, '/')
+    //   PartsImgs = PartsImgs.join('')
+    //   newPartsImg = `https://fuss10.elemecdn.com/${PartsImgs}&${state.imgurl}`
+    //   return newPartsImg
+    // }
   }
 }

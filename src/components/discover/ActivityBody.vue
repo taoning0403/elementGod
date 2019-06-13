@@ -1,4 +1,5 @@
 <template>
+  <!-- 限时好礼部分 -->
   <div class="activity-body">
     <!-- 暂写params方式，官网实际要用路由拦截在路由处直接设置query参数 -->
     <router-link
@@ -11,6 +12,7 @@
           exchangeId: 0
         }
       }"
+      v-show="isOk"
     >
       <img
         :src="Exchan.image_hash | getPartsImg" alt=""
@@ -31,7 +33,12 @@
 <script>
 export default {
   name: 'ActivityBody',
-
+  data () {
+    return {
+      isOk: true,
+      exchangeItems: null
+    }
+  },
   props: {
     exchangeItem: Array
   },
@@ -61,6 +68,15 @@ export default {
     padding: 12px 0 15px 15px;
     display: flex;
     flex-wrap: wrap;
+    & a:nth-child(4){
+      // display: none;
+    }
+    & a:nth-child(5){
+      // display: none;
+    }
+    & a:nth-child(6){
+      // display: none;
+    }
     .discover-gift{
       flex: 0 0 auto;
       width: 111px;
