@@ -45,7 +45,28 @@ export default new Router({
     {
       path: '/goods',
       name: 'goods',
-      component: () => import('../views/goods/goods.vue')
+      component: () => import('../views/goods/goods.vue'),
+      children: [
+        {
+          path:'/goods/commodity',
+          name:'commodity',
+          component: () => import('../components/Details/commodity.vue')
+        },
+        {
+          path:'/goods/ratings',
+          name:'ratings',
+          component: () => import('../components/Details/ratings.vue')
+        },
+        {
+          path:'/goods/seller',
+          name:'seller',
+          component: () => import('../components/Details/seller.vue')
+        },
+        {
+          path: '/goods',
+          redirect: '/goods/commodity'
+        }
+      ]
     },
     {
       path: '/login',
