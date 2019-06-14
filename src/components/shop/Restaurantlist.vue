@@ -1,6 +1,8 @@
 <template>
   <div class="rttlist">
-    <div 
+    <router-link
+    tag="div"
+    to="/goods"
     v-for="list in rttLists"
     :key="list.id"
     class="index-container">
@@ -76,7 +78,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
