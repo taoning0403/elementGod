@@ -29,8 +29,8 @@
           </div>
         </div>
       </div>
-      <!-- 商品订单 -->
-      <div class="checkout-order"></div>
+      <!-- 商品订单组件 -->
+      <Food />
 
       <!-- 其他信息 -->
       <div class="checkout-other">
@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <!-- 底部 -->
+    <!-- 底部组件 -->
     <Pay />
   </div>
 
@@ -67,9 +67,11 @@
 
 <script>
 import Pay from '@/components/pay/Pay.vue'
+import Food from '@/components/Food/Food.vue'
 export default {
   components: {
-    Pay
+    Pay,
+    Food
   }
 }
 </script>
@@ -145,13 +147,6 @@ export default {
       }
     }
   }
-
-  // 商品详情
-  .checkout-order{
-    height: 318px;
-    background: #0085ff;
-  }
-
   // 其他信息
   .checkout-other{
     height: 250px;
