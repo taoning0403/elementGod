@@ -1,22 +1,47 @@
 <template>
   <div class="footer-pay">
     <span class="money">￥{{ msg }} </span>
-    <router-link class="pay" to="/order">去支付</router-link>
+    <!-- <div @click="pay()">
+      <router-link class="pay" to="/order">去支付</router-link>
+    </div> -->
+    <div class="pay" @click="pay()">去支付</div>
+
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import { Toast } from 'vant'
+import { setInterval, clearInterval } from 'timers';
+
+Vue.use(Toast);
 export default {
   name:'Pay',
 
   data () {
     return {
-      msg: '20'
+      msg: '25'
     }
   },
   props:{
-    tabs: Number
+    tabs: Number,
+  },
+
+  methods: {
+    pay () {
+      Toast.loading({
+        mask: true,
+        message: '免密支付中...'
+      });
+      const timer = setInterval( ()=>{
+        Toast.success('支付成功');
+        Toast.clear()
+        location.href = 'http://localhost:8080/#/order'
+        clearInterval(timer)
+      } ,1000)
+    }
   }
+
 }
 </script>
 

@@ -1,10 +1,13 @@
 <template>
-  <div>订单页面</div>
+  <Bill />
 </template>
 
 <script>
+import Bill from '@/components/Bill/Bill.vue'
 export default {
-
+  components:{
+    Bill
+  }
 }
 </script>
 
