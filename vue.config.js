@@ -1,7 +1,7 @@
 // 配置文件
 
 module.exports = {
-  publicPath: '/ele',
+  publicPath: '/hello/',
   // 选项
   devServer: {
     // port: 9090

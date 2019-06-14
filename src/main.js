@@ -4,7 +4,7 @@ import router from './router/index'
 import store from './store'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import { Swipe, SwipeItem, AddressEdit, Toast, Actionsheet,   GoodsAction, GoodsActionBigBtn, GoodsActionMiniBtn } from 'vant'
+import { Swipe, SwipeItem, AddressEdit, Toast, Actionsheet, GoodsAction, GoodsActionBigBtn, GoodsActionMiniBtn } from 'vant'
 
 import './styles/base.less'
 
@@ -16,7 +16,7 @@ Vue.use(ElementUI)
   .use(Actionsheet)
   .use(GoodsAction)
   .use(GoodsActionBigBtn)
-  .use(GoodsActionMiniBtn);
+  .use(GoodsActionMiniBtn)
 
 Vue.config.productionTip = false
 

@@ -22,7 +22,7 @@ export default {
   actions: {
     // 原地址为http://localhost:8080  项目上线后，这个正向代理会出问题，删除掉之后，会默认改为服务器的ip
     GetImgList ({ commit }) {
-      http.get('/elme/restapi/shopping/v2/entries?latitude=22.547&longitude=114.085947&templates[]=main_template&templates[]=favourable_template&templates[]=svip_template&terminal=h5')
+      http.get('/ele/restapi/shopping/v2/entries?latitude=22.547&longitude=114.085947&templates[]=main_template&templates[]=favourable_template&templates[]=svip_template&terminal=h5')
         .then(response => {
           commit('GETIMGLIST', response)
         })
