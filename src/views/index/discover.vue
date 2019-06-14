@@ -111,11 +111,6 @@ export default {
             shopName: ' 熊猫记    (固戍店)'
           },
         ],
-        partsItems: null,
-        // 401拿不到
-        activityItems: null,
-        ActItem: null,
-        isJz: true
       }
     },
 
@@ -130,6 +125,7 @@ export default {
 
   methods: {
     ...mapActions('discover', [
+      'GetPartsList'
       'GetPartsList',
       'GetRecommendList',
       'GetBodyList'
@@ -150,10 +146,18 @@ export default {
     ActivityRecommend,
     ActivityBody
   },
-
+// block_index: 1
+// content_url: "https://h5.ele.me/exchange/"
+// id: (...)
+// main_pic_hash: "8389c9aea0e856149083d84af3444b78jpeg"
+// sub_pic_hash: ""
+// subtitle: "0元好物在这里"
+// title: "金币商城"
+// title_color: "#ff9900"
+// ubt_stats_id: 0
+// https://fuss10.elemecdn.com/8/38/9c9aea0e856149083d84af3444b78jpeg.jpeg?imageMogr/format/webp/
   watch: {
       partsList (newVal, oldVal){
-
         this.partsItems = newVal[1];
       },
       activitylist (newVal, oldVal){
