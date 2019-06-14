@@ -2,7 +2,7 @@
   <div class="commodity">
     <div class="menu-wrapper" ref="menuWrapper">
 				<ul>
-					<li v-for="(item,index) in goods"  class="menu-items" :class="{'current': currentIndex === index}" @click="selectMenu(index,$event)">
+					<li v-for="(item,index) in goods.goods"  class="menu-items" :class="{'current': currentIndex === index}" @click="selectMenu(index,$event)">
 						<span class="texts border-bottom-1px">
 							<span v-show="item.type>0" class="icon" :class="classMap[item.type]"></span>{{item.name}}
 						</span>
@@ -11,7 +11,7 @@
 			</div>
 			<div class="foods-wrapper" ref="foodsWrapper">
 				<ul>
-					<li v-for="item in goods" :key="item.name" class="food-list food-list-hook">
+					<li v-for="item in goods.goods" :key="item.name" class="food-list food-list-hook">
 						<h1 class="titless">{{item.name}}</h1>
 						<ul>
 							<li @click="selectFood(food,$event)" v-for="food in item.foods"  class="food-item border-bottom-1px">
@@ -38,12 +38,24 @@
 				</ul>
       </div>
       <div class="gwc">
-        <div class="gwc_tu">
-        </div>
-        <div class="gwc_zz"></div>
-        <div class="gwc_an">
-          <button class="gwc_gwc">加入购物车</button>
-        </div>
+    <van-goods-action>
+  <van-goods-action-mini-btn
+    icon="chat-o"
+    text="客服"
+  />
+  <van-goods-action-mini-btn
+    info="1"
+    icon="cart-o"
+    text="购物车"
+  />
+  <van-goods-action-big-btn
+    text="加入购物车"
+  />
+  <van-goods-action-big-btn
+    primary
+    text="立即购买"
+  />
+</van-goods-action>
 			</div>
 
 		</div>
@@ -52,11 +64,6 @@
 import http from "../../utils/publicTools/http";
 export default {
   name: "goods",
-  props: {
-    seller: {
-      type: Object
-    }
-  },
   data() {
     return {
       num: 0,
@@ -94,7 +101,7 @@ export default {
 
   created() {
     http
-      .get("http://localhost:3000/goods")
+      .get("./goods.json")
       .then(response => {
         let res = response.data;
         console.log(response);
@@ -238,7 +245,6 @@ export default {
 .gwc_tu{
   width:100px;
   height:100px;
-  background: #00a0dc;
   border-radius:50%;
   position: absolute;
   bottom: -20px;
@@ -246,7 +252,6 @@ export default {
 }
 .gwc_zz{
   width: 50%;
-  background: chartreuse;
   height: 50px;
   margin-left:86px;
   float: left;
@@ -255,7 +260,16 @@ export default {
   height: 50px;
   width: 26%;
   float: left;
-  background: coral;
+}
+.gwc_gwc{
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: rgb(255, 106, 0);
+  font-size: 14px;
+  color: #fff;
+
+
 }
 .texts {
   color: #00a0dc;
