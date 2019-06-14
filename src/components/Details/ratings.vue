@@ -4,18 +4,18 @@
     <div class="ratings-content">
       <div class="overview">
         <div class="overview-left">
-          <h1 class="score">{{seller.score}}</h1>
+          <h1 class="score">{{seller.seller.score}}</h1>
           <div class="title">综合评分</div>
           <div class="rank">高于周边商家24%</div>
         </div>
         <div class="overview-right">
           <div class="score-wrapper">
             <span class="title">服务态度</span>
-            <span class="score">{{seller.serviceScore}}</span>
+            <span class="score">{{seller.seller.serviceScore}}</span>
           </div>
           <div class="score-wrapper">
             <span class="title">商品评分</span>
-            <span class="score">{{seller.foodScore}}</span>
+            <span class="score">{{seller.seller.foodScore}}</span>
           </div>
           <div class="delivery-wrapper">
             <span class="title">送达时间</span>
@@ -25,23 +25,6 @@
       </div>
       <split></split>
       <div class="rating-wrapper">
-        <ul>
-          <li v-for="rating in ratings" :key="rating.idnex" class="rating-item">
-            <div class="avatar">
-              <img width="28" height="28" :src="rating.avatar">
-            </div>
-            <div class="content">
-              <h1 class="name">{{rating.username}}</h1>
-              <div class="star-wrapper"></div>
-              <p class="text">{{rating.text}}</p>
-              <div class="recommend">
-                <span class="icon-thumb_up"></span>
-                <span class="item" v-for="item in rating.recommend" :key="item.inedx">{{item}}</span>
-              </div>
-              <div class="time">{{rating.rateTime}}</div>
-            </div>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
@@ -49,24 +32,32 @@
 
 <script>
 import http from "../../utils/publicTools/http";
-import ratingselect from "./ratingselect";
 export default {
   data() {
     return {
-      seller: "",
+      seller: {},
       ratings: {}
     };
   },
-  components: {
-    ratingselect
-  },
   created() {
     http
-      .get("http://localhost:3000/ratings")
+      .get("./ratings.json")
       .then(response => {
         let res = response.data;
         console.log(response);
         this.ratings = response;
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  },
+  created() {
+    http
+      .get("./seller.json")
+      .then(response => {
+        let res = response.data;
+        console.log(response);
+        this.seller = response;
       })
       .catch(function(error) {
         console.log(error);

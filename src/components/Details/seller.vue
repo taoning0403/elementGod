@@ -4,11 +4,11 @@
       <div class="top-wrapper white">
         <div class="base">
           <div class="left">
-            <h3 class="titlec">{{ seller.name}}</h3>
+            <h3 class="titlec">{{seller.seller.name}}</h3>
             <div class="counts">
               <div class="star-wrapper">
               </div>
-              <span>月售{{ seller.sellCount}}单</span>
+              <span>月售{{ seller.seller.sellCount}}单</span>
             </div>
           </div>
           <div class="right">
@@ -21,21 +21,21 @@
           <div class="minPrice item border-right">
             <h5>起送价</h5>
             <div class="notice">
-              {{seller.minPrice}}
+              {{seller.seller.minPrice}}
               <span>元</span>
             </div>
           </div>
           <div class="deliveryPrice item border-right">
             <h5>商家配送</h5>
             <div class="notice">
-              {{seller.deliveryPrice}}
+              {{seller.seller.deliveryPrice}}
               <span>元</span>
             </div>
           </div>
           <div class="deliveryTime item">
             <h5>平均配送时间</h5>
             <div class="notice">
-              {{seller.deliveryTime}}
+              {{seller.seller.deliveryTime}}
               <span>分钟</span>
             </div>
           </div>
@@ -43,18 +43,18 @@
       </div>
       <div class="avtivities-wrapper white">
         <h3 class="title">公告与活动</h3>
-        <p class="bulletin">{{seller.bulletin}}</p>
-        <ul v-if="seller.supports" class="supports">
-          <li class="support-item border-top-1px" v-for="(item,index) in seller.supports">
-            <span class="text">{{seller.supports[index].description}}</span>
+        <p class="bulletin">{{seller.seller.bulletin}}</p>
+        <ul v-if="seller.seller.supports" class="supports">
+          <li class="support-item border-top-1px" v-for="(item,index) in seller.seller.supports" :key="index">
+            <span class="text">{{seller.seller.supports[index].description}}</span>
           </li>
         </ul>
       </div>
       <div class="pics-wrapper white">
         <h3 class="title">商家实景</h3>
-        <div class="pics-list" v-if="seller.pics" ref="picListWrapper">
+        <div class="pics-list" v-if="seller.seller.pics" ref="picListWrapper">
           <ul ref="picList">
-            <li v-for="(item,index) in seller.pics" class="item">
+            <li v-for="(item,index) in seller.seller.pics" class="item" :key="item">
               <img :src="item" alt width="120" height="90">
             </li>
           </ul>
@@ -62,9 +62,9 @@
       </div>
       <div class="infos-wrapper white">
         <h3 class="title">商家信息</h3>
-        <div class="infos" v-if="seller.infos">
+        <div class="infos" v-if="seller.seller.infos">
           <ul>
-            <li v-for="(item,index) in seller.infos">{{item}}</li>
+            <li v-for="(item,index) in seller.seller.infos">{{item}}</li>
           </ul>
         </div>
       </div>
@@ -78,12 +78,12 @@ export default {
 
   data() {
     return {
-      seller: {}
+      seller: {},
     };
   },
   created() {
     http
-      .get("http://localhost:3000/seller")
+      .get("./seller.json")
       .then(response => {
         let res = response.data;
         console.log(response);

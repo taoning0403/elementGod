@@ -125,7 +125,6 @@ export default {
 
   methods: {
     ...mapActions('discover', [
-      'GetPartsList'
       'GetPartsList',
       'GetRecommendList',
       'GetBodyList'

@@ -3,37 +3,37 @@
     <div class="header">
       <div class="content-wrapper">
         <div class="avatar">
-          <img :src="seller.avatar">
+          <img src="http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg">
         </div>
         <div class="content">
           <div class="title">
             <span class="brand"></span>
-            <span class="name">{{ seller.name }}</span>
+            <span class="name">{{ "粥品香坊（回龙观）" }}</span>
           </div>
-          <div class="description">{{seller.description}}/{{seller.deliveryTime}}分钟送达</div>
-          <div class="support" v-if="seller.supports">
-            <span class="icon" :class="classMap[seller.supports[0].type]"></span>
-            <span class="texts">{{seller.supports[0].description}}</span>
+          <div class="description">{{seller.seller.description}}/{{seller.seller.deliveryTime}}分钟送达</div>
+          <div class="support" v-if="seller.seller.supports">
+            <span class="icon" :class="classMap[seller.seller.supports[0].type]"></span>
+            <span class="texts">{{seller.seller.supports[0].description}}</span>
           </div>
         </div>
-        <div v-if="seller.supports" class="support-count" @click="showDetails">
-          <span class="count">{{seller.supports.length}}个</span>
+        <div v-if="seller.seller.supports" class="support-count" @click="showDetails">
+          <span class="count">{{seller.seller.supports.length}}个</span>
           <i class="icon-keyboard_arrow_right">></i>
         </div>
       </div>
       <div class="bulletin-wrapper" @click="showDetails">
         <span class="bulletin-title"></span>
-        <span class="bulletin-text">{{seller.bulletin}}</span>
+        <span class="bulletin-text">{{seller.seller.bulletin}}</span>
         <i class="icon-keyboard_arrow_rightt">></i>
       </div>
       <div class="background">
-        <img :src="seller.avatar" width="100%" height="100%">
+        <img src="http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg" width="100%" height="100%">
       </div>
       <transition name="fade">
         <div v-show="detailShow" class="detail">
           <div class="detail-wrapper clearfix">
             <div class="datail-main">
-              <h1 class="name">{{ seller.name }}</h1>
+              <h1 class="name">{{ "粥品香坊（回龙观）" }}</h1>
               <div class="star-wrapper">
                 <div class="star">
                   <span class="stars" v-for="(a, i) in 5" :key="i">{{star > i ? '★' : '☆' }}</span>
@@ -44,10 +44,10 @@
                 <div class="text">优惠信息</div>
                 <div class="line"></div>
               </div>
-              <ul v-if="seller.supports" class="supports">
-                <li class="support-item" v-for="(item,index) in seller.supports" :key="index">
-                  <span class="icon" :class="classMap[seller.supports[index].type]"></span>
-                  <span class="text">{{seller.supports[index].description}}</span>
+              <ul v-if="seller.seller.supports" class="supports">
+                <li class="support-item" v-for="(item,index) in seller.seller.supports" :key="index">
+                  <span class="icon" :class="classMap[seller.seller.supports[index].type]"></span>
+                  <span class="text">{{seller.seller.supports[index].description}}</span>
                 </li>
               </ul>
               <div class="titles">
@@ -56,7 +56,7 @@
                 <div class="line"></div>
               </div>
               <div class="bulletin">
-                <p class="content">{{seller.bulletin}}</p>
+                <p class="content">{{seller.seller.bulletin}}</p>
               </div>
             </div>
           </div>
@@ -72,7 +72,6 @@
 import http from "../../utils/publicTools/http";
 import { constants } from "fs";
 export default {
-  name:'header',
   data() {
     return {
       star: "4",
@@ -83,7 +82,7 @@ export default {
   },
   created() {
     http
-      .get("http://localhost:3000/seller")
+      .get("./seller.json")
       .then(response => {
         let res = response.data;
         console.log(response);
