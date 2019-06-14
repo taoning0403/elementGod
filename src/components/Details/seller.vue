@@ -54,7 +54,7 @@
         <h3 class="title">商家实景</h3>
         <div class="pics-list" v-if="seller.seller.pics" ref="picListWrapper">
           <ul ref="picList">
-            <li v-for="(item,index) in seller.seller.pics" class="item" :key="item">
+            <li v-for="(item,index) in seller.seller.pics" class="item" :key="index">
               <img :src="item" alt width="120" height="90">
             </li>
           </ul>

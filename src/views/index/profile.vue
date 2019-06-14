@@ -11,7 +11,7 @@
         </div>
         <dir class="login-conten">
           <p class="login-link">登陆/注册</p>
-          <p class="login-msg"><i class="el-icon-mobile-phone"></i><span class="login-tequan">登陆后享受更多特权</span></p>
+          <p class="login-msg"><i class="icon-shouji iconfont"></i><span class="login-tequan">登陆后享受更多特权</span></p>
         </dir>
         <span class="logon-guide">
           <i class="el-icon-arrow-right"></i>
@@ -37,9 +37,9 @@ export default {
   data () {
     return {
       infoItem:[
-        { id: 1, name: '红包',Iconfj: 'itemIcon-fjhb', classIcon: 'el-icon-mobile', classParent: 'index-info',classFont: 'index-font',
+        { id: 1, name: '红包',Iconfj: 'itemIcon-fjhb', classIcon: 'icon-hongbao', classParent: 'index-info',classFont: 'index-font',
         href: '/profile/benefit' },
-        { id: 2, name: '金币',Iconfj: 'itemIcon-fjjb', classIcon: 'el-icon-coin',classParent: 'index-info',classFont: 'index-font',
+        { id: 2, name: '金币',Iconfj: 'itemIcon-fjjb', classIcon: 'icon-29',classParent: 'index-info',classFont: 'index-font',
         href: '/profile/benefit' }
       ],
       panelMySite:[
@@ -47,9 +47,9 @@ export default {
           id: 1,
           name: '我的地址',
           linkC: ['panel-my-link','panel-my-margin','border-tops','border-bottoms'],
-          asideC: ['el-icon-location', 'panel-my-site'],
+          asideC: ['icon-dizhi', 'panel-my-site'],
           articleC: 'panel-my-art',
-          iconC: 'el-icon-arrow-right',
+          iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
         }
       ],
@@ -58,18 +58,18 @@ export default {
           id: 1,
           name: '金币商城',
           linkC: ['panel-my-link','border-tops'],
-          asideC: ['el-icon-sell', 'panel-my-site'],
+          asideC: ['icon-29', 'panel-my-site'],
           articleC: 'panel-my-art',
-          iconC: 'el-icon-arrow-right',
+          iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
         },
         {
           id: 2,
           name: '分享拿20元现金',
           linkC: ['panel-boon-link','panel-my-link'],
-          asideC: ['el-icon-potato-strips', 'panel-my-site'],
+          asideC: ['icon-icon-test', 'panel-my-site'],
           articleC: ['panel-my-art','border-tops'],
-          iconC: 'el-icon-arrow-right',
+          iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
         },
       ],
@@ -78,27 +78,27 @@ export default {
           id: 1,
           name: '我的客服',
           linkC: ['panel-my-link','border-tops'],
-          asideC: ['el-icon-phone', 'panel-my-site'],
+          asideC: ['icon-linedesign-20', 'panel-my-site'],
           articleC: 'panel-my-art',
-          iconC: 'el-icon-arrow-right',
+          iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
         },
         {
           id: 2,
           name: '下载饿了么APP',
           linkC: ['panel-my-link'],
-          asideC: ['el-icon-platform-eleme', 'panel-my-site'],
+          asideC: ['icon-changyonglogo40', 'panel-my-site'],
           articleC: ['panel-my-art','border-tops'],
-          iconC: 'el-icon-arrow-right',
+          iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
         },
         {
           id: 3,
           name: '规则中心',
           linkC: ['border-bottoms','panel-my-link'],
-          asideC: ['el-icon-s-order', 'panel-my-site'],
+          asideC: ['icon-guizeshuoming', 'panel-my-site'],
           articleC: ['panel-my-art','border-tops'],
-          iconC: 'el-icon-arrow-right',
+          iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
         },
       ],

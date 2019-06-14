@@ -54,7 +54,7 @@ export default {
         box-sizing: border-box;
         position: relative;
         color: #333;
-        .el-icon-arrow-right{
+        .icon-iconfontjiantou2{
           position: absolute;
           right: 0;
           top: 50%;
@@ -62,7 +62,7 @@ export default {
         }
       }
       // 右箭头
-      .el-icon-arrow-right{
+      .icon-iconfontjiantou2{
         color: rgb(156, 153, 153);
       }
     }
@@ -75,13 +75,13 @@ export default {
       margin-bottom:10px;
       margin-top: 0;
     }
-    .el-icon-location{
-      color: rgb(48, 109, 221);
+    .icon-dizhi{
+      color: rgb(78, 132, 233);
     }
-    .el-icon-sell{
+    .icon-29{
       color: rgb(10, 223, 159);
     }
-    .el-icon-potato-strips{
+    .icon-icon-test{
       color: rgb(233, 109, 7);
     }
     .el-icon-phone{

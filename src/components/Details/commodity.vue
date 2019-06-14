@@ -2,7 +2,7 @@
   <div class="commodity">
     <div class="menu-wrapper" ref="menuWrapper">
 				<ul>
-					<li v-for="(item,index) in goods.goods"  class="menu-items" :class="{'current': currentIndex === index}" @click="selectMenu(index,$event)">
+					<li v-for="(item,index) in goods.goods" :key="index" class="menu-items" :class="{'current': currentIndex === index}" @click="selectMenu(index,$event)">
 						<span class="texts border-bottom-1px">
 							<span v-show="item.type>0" class="icon" :class="classMap[item.type]"></span>{{item.name}}
 						</span>
@@ -14,7 +14,7 @@
 					<li v-for="item in goods.goods" :key="item.name" class="food-list food-list-hook">
 						<h1 class="titless">{{item.name}}</h1>
 						<ul>
-							<li @click="selectFood(food,$event)" v-for="(food,index) in item.foods" :key="index" class="food-item border-bottom-1px">
+							<li @click="selectFoods(food,$event)" v-for="(food,index) in item.foods" :key="index" class="food-item border-bottom-1px">
 								<div class="icon">
 									<img :src="food.icon" width="57" height="57" />
 								</div>
@@ -51,7 +51,7 @@
   <van-goods-action-big-btn
     text="加入购物车"
   />
-  <van-goods-action-big-btn
+  <van-goods-action-big-btn @click="balanceLink"
     primary
     text="立即购买"
   />
@@ -137,18 +137,18 @@ export default {
       this.selectedFood = food;
       this.$refs.food.show();
     },
-    _initScroll() {
-      this.menuScroll = new BScroll(this.$refs.menuWrapper, {
-        click: true
-      });
-      this.foodsScroll = new BScroll(this.$refs.foodsWrapper, {
-        probeType: 3,
-        click: true
-      });
-      this.foodsScroll.on("scroll", pos => {
-        this.scrollY = Math.abs(Math.round(pos.y));
-      });
-    },
+    // _initScroll() {
+    //   this.menuScroll = new BScroll(this.$refs.menuWrapper, {
+    //     click: true
+    //   });
+    //   this.foodsScroll = new BScroll(this.$refs.foodsWrapper, {
+    //     probeType: 3,
+    //     click: true
+    //   });
+    //   this.foodsScroll.on("scroll", pos => {
+    //     this.scrollY = Math.abs(Math.round(pos.y));
+    //   });
+    // },
     _calculateHeight() {
       let foodList = this.$refs.foodsWrapper.getElementsByClassName(
         "food-list-hook"
@@ -161,6 +161,9 @@ export default {
         this.listHeight.push(height);
       }
     },
+    balanceLink () {
+      this.$router.push('/order')
+    }
   }
 };
 </script>

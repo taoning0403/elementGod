@@ -62,7 +62,7 @@ export default {
       text-align: center;
       // font-size: 24px;
 
-      .el-icon-mobile{
+      .icon-hongbao{
         font-size: 22px;
         line-height: 25px;
       }
@@ -75,7 +75,7 @@ export default {
       color: #fff;
       // font-size: 24px;
       text-align: center;
-      .el-icon-coin{
+      .icon-29{
         font-size: 22px;
         line-height: 25px;
       }

@@ -10,7 +10,7 @@
             <span class="brand"></span>
             <span class="name">{{ "粥品香坊（回龙观）" }}</span>
           </div>
-          <div class="description">{{seller.seller.description}}/{{seller.seller.deliveryTime}}分钟送达</div>
+          <div class="descriptionss">{{seller.seller.description}}/{{seller.seller.deliveryTime}}分钟送达</div>
           <div class="support" v-if="seller.seller.supports">
             <span class="icon" :class="classMap[seller.seller.supports[0].type]"></span>
             <span class="texts">{{seller.seller.supports[0].description}}</span>
@@ -44,6 +44,7 @@
                 <div class="text">优惠信息</div>
                 <div class="line"></div>
               </div>
+              <!-- 隐藏组件的数据 -->
               <ul v-if="seller.seller.supports" class="supports">
                 <li class="support-item" v-for="(item,index) in seller.seller.supports" :key="index">
                   <span class="icon" :class="classMap[seller.seller.supports[index].type]"></span>
@@ -149,7 +150,7 @@ export default {
   line-height: 18px;
   font-weight: bold;
 }
-.description {
+.descriptionss {
   margin-bottom: 10px;
   line-height: 12px;
   font-size: 12px;
