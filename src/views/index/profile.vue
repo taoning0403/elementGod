@@ -29,35 +29,33 @@
   </section>
 </template>
 <script>
-import ProfileItem from '@/components/profile/ProfileItem.vue';
-import MyPanel from '@/components/profile/MyPanel.vue';
+import ProfileItem from '@/components/profile/ProfileItem.vue'
+import MyPanel from '@/components/profile/MyPanel.vue'
 
 export default {
   name: 'Profile',
   data () {
     return {
-      infoItem:[
-        { id: 1, name: '红包',Iconfj: 'itemIcon-fjhb', classIcon: 'icon-hongbao', classParent: 'index-info',classFont: 'index-font',
-        href: '/profile/benefit' },
-        { id: 2, name: '金币',Iconfj: 'itemIcon-fjjb', classIcon: 'icon-29',classParent: 'index-info',classFont: 'index-font',
-        href: '/profile/benefit' }
+      infoItem: [
+        { id: 1, name: '红包', Iconfj: 'itemIcon-fjhb', classIcon: 'icon-hongbao', classParent: 'index-info', classFont: 'index-font', href: '/profile/benefit' },
+        { id: 2, name: '金币', Iconfj: 'itemIcon-fjjb', classIcon: 'icon-29', classParent: 'index-info', classFont: 'index-font', href: '/profile/benefit' }
       ],
-      panelMySite:[
+      panelMySite: [
         {
           id: 1,
           name: '我的地址',
-          linkC: ['panel-my-link','panel-my-margin','border-tops','border-bottoms'],
+          linkC: ['panel-my-link', 'panel-my-margin', 'border-tops', 'border-bottoms'],
           asideC: ['icon-dizhi', 'panel-my-site'],
           articleC: 'panel-my-art',
           iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
         }
       ],
-      panelMyBoon:[
+      panelMyBoon: [
         {
           id: 1,
           name: '金币商城',
-          linkC: ['panel-my-link','border-tops'],
+          linkC: ['panel-my-link', 'border-tops'],
           asideC: ['icon-29', 'panel-my-site'],
           articleC: 'panel-my-art',
           iconC: 'icon-iconfontjiantou2',
@@ -66,18 +64,18 @@ export default {
         {
           id: 2,
           name: '分享拿20元现金',
-          linkC: ['panel-boon-link','panel-my-link'],
+          linkC: ['panel-boon-link', 'panel-my-link'],
           asideC: ['icon-icon-test', 'panel-my-site'],
-          articleC: ['panel-my-art','border-tops'],
+          articleC: ['panel-my-art', 'border-tops'],
           iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
-        },
+        }
       ],
-      panelMyServe:[
+      panelMyServe: [
         {
           id: 1,
           name: '我的客服',
-          linkC: ['panel-my-link','border-tops'],
+          linkC: ['panel-my-link', 'border-tops'],
           asideC: ['icon-linedesign-20', 'panel-my-site'],
           articleC: 'panel-my-art',
           iconC: 'icon-iconfontjiantou2',
@@ -88,26 +86,26 @@ export default {
           name: '下载饿了么APP',
           linkC: ['panel-my-link'],
           asideC: ['icon-changyonglogo40', 'panel-my-site'],
-          articleC: ['panel-my-art','border-tops'],
+          articleC: ['panel-my-art', 'border-tops'],
           iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
         },
         {
           id: 3,
           name: '规则中心',
-          linkC: ['border-bottoms','panel-my-link'],
+          linkC: ['border-bottoms', 'panel-my-link'],
           asideC: ['icon-guizeshuoming', 'panel-my-site'],
-          articleC: ['panel-my-art','border-tops'],
+          articleC: ['panel-my-art', 'border-tops'],
           iconC: 'icon-iconfontjiantou2',
           href: '/profile/site'
-        },
-      ],
+        }
+      ]
     }
   },
-    components: {
-      ProfileItem,
-      MyPanel
-    }
+  components: {
+    ProfileItem,
+    MyPanel
+  }
 }
 </script>
 
