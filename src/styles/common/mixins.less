@@ -1,0 +1,151 @@
+//公用样式块
+
+// 单上
+.border-top {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 1px;
+    background: #ededed;
+    transform: scaleY(.5);
+  }
+}
+// 单下
+.border-bottom {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background: #ededed;
+    transform: scaleY(.5);
+  }
+}
+// 单右
+.border-right {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #ededed;
+    transform: scaleX(.5);
+  }
+}
+
+// 上下边框
+.border-tops {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 1px;
+    background: #e7e3e3;
+    transform: scaleY(.5);
+  }
+}
+
+.border-bottoms {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background: #e7e3e3;
+    transform: scaleY(.5);
+  }
+}
+
+// 四面边框
+.border {
+  position: relative;
+  &::after {
+    content: '';
+    transform: scale(.5);
+    position: absolute;
+    border: 1px solid #ff5f16;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    border-radius: 4px;
+  }
+
+}
+
+
+// 左横线
+.border-lefts {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background: #333;
+    transform: scaleY(.5);
+  }
+}
+
+// 左圆点
+.border-left-radius {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    right:0;
+    top: 50%;
+    height: 4px;
+    background: #333;
+    // transform: scaleY(.5);
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+// 右横线
+.border-rights {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    background: #333;
+    transform: scaleY(.5);
+  }
+}
+
+// 右圆点
+.border-right-radius {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    left: 0px;
+    top: 50%;
+    height: 4px;
+    background: #333;
+    // transform: scaleY(.5);
+    border-radius: 50%;
+    transform: translateY(-50%)
+  }
+}
