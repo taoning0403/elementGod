@@ -12,7 +12,7 @@
         <span class=" activity-spanb"></span>
       </div>
       <p class="activity-msg">你的口味我都懂得</p>
-      <ActivityRecommend :activityItem="activityItem" />
+      <ActivityRecommend :activityItem="activityItems ? activityItems : activityItem" />
       <p class="activity-footer">
         查看更多<i class="el-icon-arrow-right"></i>
       </p>
@@ -111,6 +111,13 @@ export default {
             shopName: ' 熊猫记    (固戍店)'
           },
         ],
+        // 头部数据
+        partsItems: null,
+        // 底部数据
+        ActItem: null,
+        // 中部数据
+        activityItems: null,
+        isJz: true
       }
     },
 
@@ -125,7 +132,6 @@ export default {
 
   methods: {
     ...mapActions('discover', [
-      'GetPartsList'
       'GetPartsList',
       'GetRecommendList',
       'GetBodyList'

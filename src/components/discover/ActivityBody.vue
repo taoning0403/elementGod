@@ -12,7 +12,6 @@
           exchangeId: 0
         }
       }"
-      v-show="isOk"
     >
       <img
         :src="Exchan.image_hash | getPartsImg" alt=""
@@ -35,8 +34,7 @@ export default {
   name: 'ActivityBody',
   data () {
     return {
-      isOk: true,
-      exchangeItems: null
+      // exchangeItem: null，
     }
   },
   props: {
@@ -68,15 +66,15 @@ export default {
     padding: 12px 0 15px 15px;
     display: flex;
     flex-wrap: wrap;
-    & a:nth-child(4){
-      // display: none;
-    }
-    & a:nth-child(5){
-      // display: none;
-    }
-    & a:nth-child(6){
-      // display: none;
-    }
+    // & a:nth-child(4){
+    //   // display: none;
+    // }
+    // & a:nth-child(5){
+    //   // display: none;
+    // }
+    // & a:nth-child(6){
+    //   // display: none;
+    // }
     .discover-gift{
       flex: 0 0 auto;
       width: 111px;
