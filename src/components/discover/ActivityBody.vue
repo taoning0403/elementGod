@@ -1,9 +1,10 @@
 <template>
+  <!-- 限时好礼部分 -->
   <div class="activity-body">
     <!-- 暂写params方式，官网实际要用路由拦截在路由处直接设置query参数 -->
     <router-link
-      v-for="(Exchan) in exchangeItem"
-      :key="Exchan.id"
+      v-for="(Exchan, index) in exchangeItem"
+      :key="index"
       class="discover-gift"
       :to="{
         name: 'ActivityBody',
@@ -11,19 +12,20 @@
           exchangeId: 0
         }
       }"
+      v-show="isOk"
     >
       <img
-        :src="Exchan.giftImg" alt=""
+        :src="Exchan.image_hash | getPartsImg" alt=""
         class="gift-img"
       >
       <div class="gift-content">
-        <p class="gift-subtitle">{{ Exchan.giftSubtitle }}</p>
+        <p class="gift-subtitle">{{ Exchan.title }}</p>
         <div class="gift-price">
-          <span class="prices">{{ Exchan.prices }}</span>
-          <i class="prices-onsale">{{ Exchan.pricesOnsale }}</i>
+          <span class="prices">{{ Exchan.points_required }} 金币</span>
+          <i class="prices-onsale">￥{{ Exchan.original_price }}</i>
         </div>
       </div>
-      <span class="gift-title">{{ Exchan.giftTitle }}</span>
+      <span class="gift-title">{{ Exchan.corner_marker }}</span>
     </router-link>
   </div>
 </template>
@@ -31,9 +33,26 @@
 <script>
 export default {
   name: 'ActivityBody',
-
+  data () {
+    return {
+      isOk: true,
+      exchangeItems: null
+    }
+  },
   props: {
     exchangeItem: Array
+  },
+
+  filters: {
+    getPartsImg (value) {
+      let newPartsImg = ''
+      let PartsImgs = value.split('')
+      PartsImgs.splice(1,0,'/')
+      PartsImgs.splice(4,0,'/')
+      PartsImgs = PartsImgs.join('')
+      newPartsImg = `https://fuss10.elemecdn.com/${PartsImgs}.jpeg?imageMogr/format/webp/`
+      return newPartsImg
+    }
   }
 }
 </script>
@@ -48,6 +67,16 @@ export default {
     box-sizing: border-box;
     padding: 12px 0 15px 15px;
     display: flex;
+    flex-wrap: wrap;
+    & a:nth-child(4){
+      // display: none;
+    }
+    & a:nth-child(5){
+      // display: none;
+    }
+    & a:nth-child(6){
+      // display: none;
+    }
     .discover-gift{
       flex: 0 0 auto;
       width: 111px;
@@ -64,7 +93,7 @@ export default {
         height: 44px;
         .gift-subtitle{
           height: 15px;
-          font-size: 14px;
+          font-size: 12px;
           margin-bottom: 5px;
           color: #333;
         }
