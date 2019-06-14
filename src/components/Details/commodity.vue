@@ -2,8 +2,8 @@
   <div class="commodity">
     <div class="menu-wrapper" ref="menuWrapper">
 				<ul>
-					<li v-for="(item,index) in goods" :key="item.type" class="menu-item" :class="{'current': currentIndex === index}" @click="selectMenu(index,$event)">
-						<span class="text border-bottom-1px">
+					<li v-for="(item,index) in goods"  class="menu-items" :class="{'current': currentIndex === index}" @click="selectMenu(index,$event)">
+						<span class="texts border-bottom-1px">
 							<span v-show="item.type>0" class="icon" :class="classMap[item.type]"></span>{{item.name}}
 						</span>
 					</li>
@@ -14,12 +14,12 @@
 					<li v-for="item in goods" :key="item.name" class="food-list food-list-hook">
 						<h1 class="titless">{{item.name}}</h1>
 						<ul>
-							<li @click="selectFood(food,$event)" v-for="food in item.foods" :key="food.icon" class="food-item border-bottom-1px">
+							<li @click="selectFood(food,$event)" v-for="food in item.foods"  class="food-item border-bottom-1px">
 								<div class="icon">
 									<img :src="food.icon" width="57" height="57" />
 								</div>
 								<div class="content">
-									<h2 class="name">{{food.name}}</h2>
+									<h2 class="names">{{food.name}}</h2>
 									<p class="desc">{{food.description}}</p>
 									<div class="extra">
 										<span class="count">月售{{food.sellCount}}份</span>
@@ -27,22 +27,29 @@
 									</div>
 									<div class="price">
 										<span class="now">¥{{food.price}}</span><span class="old" v-show="food.oldPrice">¥{{food.oldPrice}}</span>
+                    <el-input-number  class="jia" v-model="num" @change="handleChange" :min="1" :max="10"  size="mini"></el-input-number>
 									</div>
 									<div class="cartControl-wrapper">
-										<!-- <cartcontrol :food="food" @add="drop"></cartcontrol> -->
 									</div>
 								</div>
 							</li>
 						</ul>
 					</li>
 				</ul>
+      </div>
+      <div class="gwc">
+        <div class="gwc_tu">
+        </div>
+        <div class="gwc_zz"></div>
+        <div class="gwc_an">
+          <button class="gwc_gwc">加入购物车</button>
+        </div>
 			</div>
-			<!-- <shopcart ref="shopcart" :select-foods="selectFoods" :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart> -->
+
 		</div>
 </template>
 <script>
 import http from "../../utils/publicTools/http";
-
 export default {
   name: "goods",
   props: {
@@ -52,25 +59,15 @@ export default {
   },
   data() {
     return {
+      num: 0,
       goods: {},
+      seller:{},
       listHeight: [],
       scrollY: 0,
       selectedFood: {},
       classMap: ["decrease", "discount", "special", "invoice", "guarantee"]
     };
   },
-  created() {
-			this.$http.get('/api/goods').then((response) => {
-				response = response.body;
-				if(response.errno === ERR_OK){
-					this.goods = response.data;
-					this.$nextTick( ()=> {
-						this._initScroll();
-						this._calculateHeight();
-					})
-				}
-			});
-    },
   computed: {
     currentIndex() {
       for (let i = 0, l = this.listHeight.length; i < l; i++) {
@@ -108,8 +105,10 @@ export default {
       });
   },
   methods: {
+    handleChange(value) {
+        console.log(value);
+      },
     drop(target) {
-      //体验优化，异步执行下落动画
       this.$nextTick(() => {
         this.$refs.shopcart.drop(target);
       });
@@ -154,7 +153,7 @@ export default {
         height += item.clientHeight;
         this.listHeight.push(height);
       }
-    }
+    },
   }
 };
 </script>
@@ -173,9 +172,11 @@ export default {
   flex: 0 0 80px;
   width: 80px;
   background: #f3f5f7;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.menu-item {
+.menu-items {
   display: table;
   height: 54px;
   width: 60px;
@@ -214,7 +215,7 @@ export default {
   background-image: url(./img/decrease_1@2x.png);
 }
 
-.text {
+.texts {
   width: 56px;
   vertical-align: middle;
   font-size: 12px;
@@ -228,16 +229,46 @@ export default {
   margin-top: -1px;
   background: #fff;
 }
-
-.text {
+.gwc{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0px
+}
+.gwc_tu{
+  width:100px;
+  height:100px;
+  background: #00a0dc;
+  border-radius:50%;
+  position: absolute;
+  bottom: -20px;
+  left: -5px;
+}
+.gwc_zz{
+  width: 50%;
+  background: chartreuse;
+  height: 50px;
+  margin-left:86px;
+  float: left;
+}
+.gwc_an{
+  height: 50px;
+  width: 26%;
+  float: left;
+  background: coral;
+}
+.texts {
   color: #00a0dc;
   border: none;
 }
-
+.jia{
+  margin-top: 5px;
+}
 .foods-wrapper {
   flex: 1;
   background: #fff;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .titless {
   padding-left: 14px;
@@ -263,12 +294,11 @@ export default {
   flex: 0 0 57px;
   margin-right: 10px;
 }
-
 .content {
   flex: 1;
 }
 
-.name {
+.names {
   margin: 2px 0 8px 0;
   height: 14px;
   line-height: 14px;
@@ -305,6 +335,7 @@ export default {
   font-size: 14px;
   color: rgb(240, 20, 20);
 }
+
 
 .old {
   text-decoration: line-through;
