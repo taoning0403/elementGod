@@ -47,19 +47,20 @@ export default {
 
   actions: {
     GetPartsList ({ commit }) {
-      http.get('http://localhost:8080/ele/restapi/member/v1/discover?platform=1&block_index=0')
+      // 原地址为http://localhost:8080  项目上线后，这个正向代理会出问题，删除掉之后，会默认改为服务器的ip
+      http.get('/ele/restapi/member/v1/discover?platform=1&block_index=0')
         .then(response => {
           commit('GETPARTSITEM', response)
         })
     },
     GetRecommendList ({ commit }) {
-      http.get('http://localhost:8080/ele/restapi/shopping/v1/find/recommendation?latitude=22.54286&longitude=114.059563&offset=0&limit=6&user_id=3714206810')
+      http.get('/ele/restapi/shopping/v1/find/recommendation?latitude=22.54286&longitude=114.059563&offset=0&limit=6&user_id=3714206810')
         .then(response => {
           commit('GETRECOMMENDLIST', response)
         })
     },
     GetBodyList ({ commit }) {
-      http.get('http://localhost:8080/ele/restapi/member/gifts/suggest')
+      http.get('/ele/restapi/member/gifts/suggest')
         .then(response => {
           commit('GETBODYLIST', response)
         })

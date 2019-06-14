@@ -64,7 +64,7 @@
         <h3 class="title">商家信息</h3>
         <div class="infos" v-if="seller.seller.infos">
           <ul>
-            <li v-for="(item,index) in seller.seller.infos">{{item}}</li>
+            <li v-for="(item,index) in seller.seller.infos" :key="index">{{item}}</li>
           </ul>
         </div>
       </div>

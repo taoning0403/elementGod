@@ -14,7 +14,7 @@
 					<li v-for="item in goods.goods" :key="item.name" class="food-list food-list-hook">
 						<h1 class="titless">{{item.name}}</h1>
 						<ul>
-							<li @click="selectFood(food,$event)" v-for="food in item.foods"  class="food-item border-bottom-1px">
+							<li @click="selectFood(food,$event)" v-for="(food,index) in item.foods" :key="index" class="food-item border-bottom-1px">
 								<div class="icon">
 									<img :src="food.icon" width="57" height="57" />
 								</div>
