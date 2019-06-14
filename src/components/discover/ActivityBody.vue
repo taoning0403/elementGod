@@ -45,8 +45,8 @@ export default {
     getPartsImg (value) {
       let newPartsImg = ''
       let PartsImgs = value.split('')
-      PartsImgs.splice(1,0,'/')
-      PartsImgs.splice(4,0,'/')
+      PartsImgs.splice(1, 0, '/')
+      PartsImgs.splice(4, 0, '/')
       PartsImgs = PartsImgs.join('')
       newPartsImg = `https://fuss10.elemecdn.com/${PartsImgs}.jpeg?imageMogr/format/webp/`
       return newPartsImg
@@ -54,7 +54,6 @@ export default {
   }
 }
 </script>
-
 
 <style lang="less" scoped>
 @import '~@/styles/common/variable.less';
@@ -127,4 +126,3 @@ export default {
     }
   }
 </style>
-

@@ -27,7 +27,7 @@ export default {
   // https://fuss10.elemecdn.com/8/38/9c9aea0e856149083d84af3444b78jpeg.jpeg?imageMogr/format/webp/
   methods: {
     ...mapGetters('discover',['HashImg']),
-    ...mapMutations('discover',['HashImgs']),
+    ...mapMutations('discover',['HashImgs'])
 
     // setHashImg(value){
     //   this.$store.commit('discover/GETHASHIMG', value);
@@ -42,8 +42,8 @@ export default {
     getPartsImg (value) {
       let newPartsImg = ''
       let PartsImgs = value.split('')
-      PartsImgs.splice(1,0,'/')
-      PartsImgs.splice(4,0,'/')
+      PartsImgs.splice( 1, 0, '/' )
+      PartsImgs.splice( 4, 0, '/' )
       PartsImgs = PartsImgs.join('')
       newPartsImg = `https://fuss10.elemecdn.com/${PartsImgs}.jpeg?imageMogr/format/webp/`
       return newPartsImg
@@ -55,7 +55,7 @@ export default {
       // return this.HashImg
     }
   },
-  created() {
+  created () {
     // var src = '.jpeg?imageMogr/format/webp/'
     // this.$store.commit('discover/SETIMGURL', src);
   }
@@ -175,6 +175,5 @@ export default {
       }
     }
   }
-
 
 </style>

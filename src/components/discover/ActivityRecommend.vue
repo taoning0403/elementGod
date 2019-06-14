@@ -53,7 +53,6 @@ export default {
 }
 </script>
 
-
 <style lang="less" scoped>
 @import '~@/styles/common/variable.less';
 @import '~@/styles/common/mixins.less';
