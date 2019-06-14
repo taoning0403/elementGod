@@ -56,8 +56,8 @@ export default {
     }
   },
   created() {
-    var src = '.jpeg?imageMogr/format/webp/'
-    this.$store.commit('discover/SETIMGURL', src);
+    // var src = '.jpeg?imageMogr/format/webp/'
+    // this.$store.commit('discover/SETIMGURL', src);
   }
 }
 </script>
